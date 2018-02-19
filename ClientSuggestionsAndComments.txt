@@ -1,0 +1,2 @@
+Notes
+One thing I want to change from the wireframes is that after searching for and selecting a generator you are on the edit screen for the generator info (basically their registration info plus a few additional fields like status). I would like to use the "people" icon you have in the control bar to navigate to the list of Generator Admins where if they click on a specific admin they navigate to the generator admin edit screen. I will gray out the screens that will be removed from the wireframes on the tracker spreadsheet and later remove them from the wireframes.

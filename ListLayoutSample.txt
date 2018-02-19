@@ -1,0 +1,99 @@
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+<div style="display: table; width: 100%;">
+	<div style="display: table-cell; vertical-align: middle;">
+			
+		<div class="[theme:listBox.base.item.parts.mainClassName|{dialog.style}ListItemLabelSub]" style="float: right;">{AgentTitle}</div>		
+		<div class="[theme:listBox.base.item.parts.mainClassName|{dialog.style}ListItemLabelSub]" style="float: right;">{AuthorizedAgent}, </div>
+		<div class="[theme:listBox.base.item.parts.mainClassName|{dialog.style}ListItemLabelMain]">{BusinessName}</div>
+			<br>
+	
+		<div class="[theme:listBox.base.item.parts.subClassName|{dialog.style}ListItemLabelSub]" style="float: left;">{address}</div>
+			<br>
+		<div class="[theme:listBox.base.item.parts.subClassName|{dialog.style}ListItemLabelSub]" style="float: right;">{Status}</div>
+		
+		<div class="[theme:listBox.base.item.parts.subClassName|{dialog.style}ListItemLabelMain]" style="float: left;>{city},</div>
+		<div class="[theme:listBox.base.item.parts.subClassName|{dialog.style}ListItemLabelMain]" style="float: left;>{state} ,</div>	
+		<div class="[theme:listBox.base.item.parts.subClassName|{dialog.style}ListItemLabelMain]">{zip} </div>
+	</div>
+	
+	<div style="display: table-cell; width: 40px; text-align: right; vertical-align: middle;">
+		<img src="{images.dialog.listNav}" />
+	</div>
+</div>
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+<div style="display: table; width: 100%;">
+	<div style="display: table-cell; vertical-align: middle;">
+		<div class="[theme:listBox.base.item.parts.mainClassName|{dialog.style}ListItemLabelMain]">{BusinessName}</div>
+			<br>
+		<div class="[theme:listBox.base.item.parts.subClassName|{dialog.style}ListItemLabelSub]" style="float: left;">{address}</div>
+			<br>
+		<div class="[theme:listBox.base.item.parts.subClassName|{dialog.style}ListItemLabelSub]" style="float: right;">{Status}</div>
+		
+		<div class="[theme:listBox.base.item.parts.subClassName|{dialog.style}ListItemLabelMain]" style="float: left;>{city},</div>
+		<div class="[theme:listBox.base.item.parts.subClassName|{dialog.style}ListItemLabelMain]" style="float: left;>{state} ,</div>	
+		<div class="[theme:listBox.base.item.parts.subClassName|{dialog.style}ListItemLabelMain]">{zip} </div>
+	</div>
+	
+	<div style="display: table-cell; width: 40px; text-align: right; vertical-align: middle;">
+		<img src="{images.dialog.listNav}" />
+	</div>
+</div>
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+My Suggestion
+<div style="display: table; width: 100%;">
+	<div style="display: table-cell; vertical-align: middle;">
+	<div class="[theme:listBox.base.item.parts.detailClassName|{dialog.style}ListItemLabelDetail]" style="float: right;">{BusinessName}</div>
+	{address} <br>
+	{city} <br>
+	{state}<br>
+	{zip}
+	</div>
+	<br>
+	
+
+	<div style="display: table-cell; width: 40px; text-align: right; vertical-align: middle;">
+		<img src="{images.dialog.listNav}" />
+	</div>
+</div>
+
+end of my Suggestion
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--Original Layout Design
+<div style="display: table; width: 100%;">
+	<div style="display: table-cell; vertical-align: middle;">
+		<div class="[theme:listBox.base.item.parts.mainClassName|{dialog.style}ListItemLabelSub]" style="float: right;">{AgentTitle}</div>
+		<div class="[theme:listBox.base.item.parts.mainClassName|{dialog.style}ListItemLabelMain]">{BusinessName}</div>
+			<br>
+		<div class="[theme:listBox.base.item.parts.subClassName|{dialog.style}ListItemLabelSub]" style="float: right;">{Status}</div>
+		<div class="[theme:listBox.base.item.parts.subClassName|{dialog.style}ListItemLabelMain]" style="float: left;>{city},</div>
+		<div class="[theme:listBox.base.item.parts.subClassName|{dialog.style}ListItemLabelMain]">{state}</div>
+	</div>
+	
+	<div style="display: table-cell; width: 40px; text-align: right; vertical-align: middle;">
+		<img src="{images.dialog.listNav}" />
+	</div>
+</div>
+
+--Original Layout Design
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+Panel 2 is the People Icon
+svgIcon=#alpha-icon-people:icon,24
+GENERATORS_LIST
+Bubble Help = Generators List
+
+
+
+Panel 5
+svgIcon=#alpha-icon-docEdit:icon,24
+VALUE = FORMVIEW
+Bubble Help = Edit Generators
+
+

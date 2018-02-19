@@ -1,0 +1,271 @@
+<PubHist<[1]<type="calendaricons">
+<name="calendaricons">
+<target_folder="c:\a5webroot\fw4">
+<timestamp=CTODT('02/02/2018 01:34:02 36 pm')>
+>
+<[2]<type="folder">
+<name="ProjectNode">
+<target_folder="c:\a5webroot\fw4">
+<timestamp=CTODT('02/02/2018 01:34:02 43 pm')>
+>
+<[3]<type="folder">
+<name="ExeReportStyles">
+<target_folder="c:\a5webroot\fw4">
+<timestamp=CTODT('02/06/2018 07:15:55 40 am')>
+>
+<[4]<type="folder">
+<name="AppDataReportStyles">
+<target_folder="c:\a5webroot\fw4">
+<timestamp=CTODT('02/06/2018 07:15:55 40 am')>
+>
+<[5]<type="folder">
+<name="ExeChartStyles">
+<target_folder="c:\a5webroot\fw4">
+<timestamp=CTODT('02/06/2018 07:15:55 40 am')>
+>
+<[6]<type="folder">
+<name="AppDataChartStyles">
+<target_folder="c:\a5webroot\fw4">
+<timestamp=CTODT('02/06/2018 07:15:55 40 am')>
+>
+<[7]<type="A5WPage">
+<name="{c:\a5\projects\uswtnmobile\uswtnmobile.webprojects\default.webproject\stewardship_registration.a5w}">
+<target_folder="c:\a5webroot\fw4">
+<timestamp=CTODT('02/02/2018 12:43:48 81 pm')>
+>
+<[8]<type="WebComponent">
+<name="{c:\a5\projects\uswtnmobile\uswtnmobile.webprojects\default.webproject\stewardshipregistrationv1.a5wcmp}">
+<target_folder="c:\a5webroot\fw4">
+<timestamp=CTODT('02/02/2018 01:12:29 60 pm')>
+>
+<[9]<type="css">
+<name="a5system">
+<target_folder="c:\a5webroot\fw4">
+<timestamp=CTODT('02/02/2018 01:34:03 57 pm')>
+>
+<[10]<type="css">
+<name="alpha">
+<target_folder="c:\a5webroot\fw4">
+<timestamp=CTODT('02/02/2018 01:34:04 33 pm')>
+>
+<[11]<type="file">
+<name="{c:\a5\projects\uswtnmobile\uswtnmobile.webprojects\default.webproject\pages.securitysettings}">
+<target_folder="c:\a5webroot\fw4">
+<timestamp=CTODT('02/02/2018 01:42:00 32 pm')>
+>
+<[12]<type="file">
+<name="{c:\a5\projects\uswtnmobile\uswtnmobile.webprojects\default.webproject\project.securitysettings}">
+<target_folder="c:\a5webroot\fw4">
+<timestamp=CTODT('02/02/2018 01:34:04 55 pm')>
+>
+<[13]<type="file">
+<name="{c:\a5\projects\uswtnmobile\uswtnmobile.webprojects\default.webproject\css\a5system\images\wait.gif}">
+<target_folder="c:\a5webroot\fw4">
+<timestamp=CTODT('02/02/2018 01:34:04 55 pm')>
+>
+<[14]<type="A5WPage">
+<name="{c:\a5\projects\uswtnmobile\uswtnmobile.webprojects\default.webproject\test.a5w}">
+<target_folder="c:\a5webroot\fw4">
+<timestamp=CTODT('02/02/2018 12:51:33 59 pm')>
+>
+<[15]<type="WebComponent">
+<name="{c:\a5\projects\uswtnmobile\uswtnmobile.webprojects\default.webproject\test.a5wcmp}">
+<target_folder="c:\a5webroot\fw4">
+<timestamp=CTODT('02/02/2018 12:50:13 69 pm')>
+>
+<[16]<type="WebComponent">
+<name="{c:\a5\projects\uswtnmobile\uswtnmobile.webprojects\default.webproject\collectorregistrationv1.a5wcmp}">
+<target_folder="c:\a5webroot\fw4">
+<timestamp=CTODT('02/02/2018 01:25:10 41 pm')>
+>
+<[17]<type="A5WPage">
+<name="{c:\a5\projects\uswtnmobile\uswtnmobile.webprojects\default.webproject\collector_registration.a5w}">
+<target_folder="c:\a5webroot\fw4">
+<timestamp=CTODT('02/02/2018 01:23:23 13 pm')>
+>
+<[18]<type="WebComponent">
+<name="{c:\a5\projects\uswtnmobile\uswtnmobile.webprojects\default.webproject\haulerregistrationv1.a5wcmp}">
+<target_folder="c:\a5webroot\fw4">
+<timestamp=CTODT('02/02/2018 01:34:12 89 pm')>
+>
+<[19]<type="file">
+<name="{c:\a5\projects\uswtnmobile\uswtnmobile.webprojects\default.webproject\node\node_settings.json}">
+<target_folder="c:\a5webroot\fw4">
+<timestamp=CTODT('02/02/2018 01:34:02 46 pm')>
+>
+<[20]<type="A5WPage">
+<name="{c:\a5\projects\uswtnmobile\uswtnmobile.webprojects\default.webproject\hauler_registration.a5w}">
+<target_folder="c:\a5webroot\fw4">
+<timestamp=CTODT('02/02/2018 01:34:03 31 pm')>
+>
+<[21]<type="WebComponent">
+<name="{c:\a5\projects\uswtnmobile\uswtnmobile.webprojects\default.webproject\processorregistrationv1.a5wcmp}">
+<target_folder="c:\a5webroot\fw4">
+<timestamp=CTODT('02/02/2018 01:41:23 45 pm')>
+>
+<[22]<type="A5WPage">
+<name="{c:\a5\projects\uswtnmobile\uswtnmobile.webprojects\default.webproject\processor_registration.a5w}">
+<target_folder="c:\a5webroot\fw4">
+<timestamp=CTODT('02/02/2018 01:42:00 28 pm')>
+>
+<[23]<type="WebComponent">
+<name="{c:\a5\projects\uswtnmobile\uswtnmobile.webprojects\default.webproject\generatornewuserv1.a5wcmp}">
+<target_folder="c:\a5webroot\fw4">
+<timestamp=CTODT('02/04/2018 03:10:53 19 pm')>
+>
+<[24]<type="A5WPage">
+<name="{c:\a5\projects\uswtnmobile\uswtnmobile.webprojects\default.webproject\index.a5w}">
+<target_folder="c:\a5webroot\fw4">
+<timestamp=CTODT('02/02/2018 06:03:34 06 pm')>
+>
+<[25]<type="A5WPage">
+<name="{c:\a5\projects\uswtnmobile\uswtnmobile.webprojects\default.webproject\logout.a5w}">
+<target_folder="c:\a5webroot\fw4">
+<timestamp=CTODT('02/02/2018 06:03:34 07 pm')>
+>
+<[26]<type="WebComponent">
+<name="{c:\a5\projects\uswtnmobile\uswtnmobile.webprojects\default.webproject\example.a5wcmp}">
+<target_folder="c:\a5webroot\fw4">
+<timestamp=CTODT('02/02/2018 06:03:34 17 pm')>
+>
+<[27]<type="WebComponent">
+<name="{c:\a5\projects\uswtnmobile\uswtnmobile.webprojects\default.webproject\facilityv3.a5wcmp}">
+<target_folder="c:\a5webroot\fw4">
+<timestamp=CTODT('02/02/2018 06:03:34 40 pm')>
+>
+<[28]<type="WebComponent">
+<name="{c:\a5\projects\uswtnmobile\uswtnmobile.webprojects\default.webproject\facilityv33.a5wcmp}">
+<target_folder="c:\a5webroot\fw4">
+<timestamp=CTODT('02/02/2018 06:03:34 63 pm')>
+>
+<[29]<type="WebComponent">
+<name="{c:\a5\projects\uswtnmobile\uswtnmobile.webprojects\default.webproject\facilityv33h.a5wcmp}">
+<target_folder="c:\a5webroot\fw4">
+<timestamp=CTODT('02/02/2018 06:03:34 86 pm')>
+>
+<[30]<type="WebComponent">
+<name="{c:\a5\projects\uswtnmobile\uswtnmobile.webprojects\default.webproject\generatoraddv1.a5wcmp}">
+<target_folder="c:\a5webroot\fw4">
+<timestamp=CTODT('02/02/2018 06:03:34 97 pm')>
+>
+<[31]<type="WebComponent">
+<name="{c:\a5\projects\uswtnmobile\uswtnmobile.webprojects\default.webproject\generatorreguserv1.a5wcmp}">
+<target_folder="c:\a5webroot\fw4">
+<timestamp=CTODT('02/02/2018 06:03:35 04 pm')>
+>
+<[32]<type="WebComponent">
+<name="{c:\a5\projects\uswtnmobile\uswtnmobile.webprojects\default.webproject\generatorregv2.a5wcmp}">
+<target_folder="c:\a5webroot\fw4">
+<timestamp=CTODT('02/02/2018 06:03:35 20 pm')>
+>
+<[33]<type="WebComponent">
+<name="{c:\a5\projects\uswtnmobile\uswtnmobile.webprojects\default.webproject\generatorssearchlistv7_bak2.a5wcmp}">
+<target_folder="c:\a5webroot\fw4">
+<timestamp=CTODT('02/02/2018 06:03:35 57 pm')>
+>
+<[34]<type="WebComponent">
+<name="{c:\a5\projects\uswtnmobile\uswtnmobile.webprojects\default.webproject\genhauprocprofilev1.a5wcmp}">
+<target_folder="c:\a5webroot\fw4">
+<timestamp=CTODT('02/02/2018 06:03:35 70 pm')>
+>
+<[35]<type="WebComponent">
+<name="{c:\a5\projects\uswtnmobile\uswtnmobile.webprojects\default.webproject\ghpprofilev1.a5wcmp}">
+<target_folder="c:\a5webroot\fw4">
+<timestamp=CTODT('02/02/2018 06:03:35 82 pm')>
+>
+<[36]<type="WebComponent">
+<name="{c:\a5\projects\uswtnmobile\uswtnmobile.webprojects\default.webproject\haulerregv1.a5wcmp}">
+<target_folder="c:\a5webroot\fw4">
+<timestamp=CTODT('02/02/2018 06:03:35 99 pm')>
+>
+<[37]<type="WebComponent">
+<name="{c:\a5\projects\uswtnmobile\uswtnmobile.webprojects\default.webproject\haulerssearchlistv5.a5wcmp}">
+<target_folder="c:\a5webroot\fw4">
+<timestamp=CTODT('02/02/2018 06:03:36 37 pm')>
+>
+<[38]<type="WebComponent">
+<name="{c:\a5\projects\uswtnmobile\uswtnmobile.webprojects\default.webproject\hauprofilev1.a5wcmp}">
+<target_folder="c:\a5webroot\fw4">
+<timestamp=CTODT('02/05/2018 09:17:34 27 pm')>
+>
+<[39]<type="WebComponent">
+<name="{c:\a5\projects\uswtnmobile\uswtnmobile.webprojects\default.webproject\processorregv1.a5wcmp}">
+<target_folder="c:\a5webroot\fw4">
+<timestamp=CTODT('02/02/2018 06:03:36 68 pm')>
+>
+<[40]<type="WebComponent">
+<name="{c:\a5\projects\uswtnmobile\uswtnmobile.webprojects\default.webproject\processorssearchlistv5.a5wcmp}">
+<target_folder="c:\a5webroot\fw4">
+<timestamp=CTODT('02/02/2018 06:03:37 06 pm')>
+>
+<[41]<type="WebComponent">
+<name="{c:\a5\projects\uswtnmobile\uswtnmobile.webprojects\default.webproject\stewardship_account.a5wcmp}">
+<target_folder="c:\a5webroot\fw4">
+<timestamp=CTODT('02/02/2018 06:03:37 24 pm')>
+>
+<[42]<type="WebComponent">
+<name="{c:\a5\projects\uswtnmobile\uswtnmobile.webprojects\default.webproject\stewardshipprofilev1.a5wcmp}">
+<target_folder="c:\a5webroot\fw4">
+<timestamp=CTODT('02/02/2018 06:03:37 37 pm')>
+>
+<[43]<type="WebComponent">
+<name="{c:\a5\projects\uswtnmobile\uswtnmobile.webprojects\default.webproject\stewardshipregv1.a5wcmp}">
+<target_folder="c:\a5webroot\fw4">
+<timestamp=CTODT('02/02/2018 06:03:37 49 pm')>
+>
+<[44]<type="WebComponent">
+<name="{c:\a5\projects\uswtnmobile\uswtnmobile.webprojects\default.webproject\triplogv3.a5wcmp}">
+<target_folder="c:\a5webroot\fw4">
+<timestamp=CTODT('02/02/2018 06:03:37 73 pm')>
+>
+<[45]<type="WebComponent">
+<name="{c:\a5\projects\uswtnmobile\uswtnmobile.webprojects\default.webproject\triplogv33_h.a5wcmp}">
+<target_folder="c:\a5webroot\fw4">
+<timestamp=CTODT('02/02/2018 06:03:37 99 pm')>
+>
+<[46]<type="WebComponent">
+<name="{c:\a5\projects\uswtnmobile\uswtnmobile.webprojects\default.webproject\uswtnaccountv1.a5wcmp}">
+<target_folder="c:\a5webroot\fw4">
+<timestamp=CTODT('02/06/2018 06:54:28 01 am')>
+>
+<[47]<type="WebComponent">
+<name="{c:\a5\projects\uswtnmobile\uswtnmobile.webprojects\default.webproject\uswtnloginv1.a5wcmp}">
+<target_folder="c:\a5webroot\fw4">
+<timestamp=CTODT('02/06/2018 07:15:56 53 am')>
+>
+<[48]<type="WebComponent">
+<name="{c:\a5\projects\uswtnmobile\uswtnmobile.webprojects\default.webproject\uswtnpassresetv1.a5wcmp}">
+<target_folder="c:\a5webroot\fw4">
+<timestamp=CTODT('02/02/2018 06:03:38 88 pm')>
+>
+<[49]<type="WebComponent">
+<name="{c:\a5\projects\uswtnmobile\uswtnmobile.webprojects\default.webproject\uswtnusersv1.a5wcmp}">
+<target_folder="c:\a5webroot\fw4">
+<timestamp=CTODT('02/05/2018 08:30:22 56 pm')>
+>
+<[50]<type="WebComponent">
+<name="{c:\a5\projects\uswtnmobile\uswtnmobile.webprojects\default.webproject\vehiclesv2.a5wcmp}">
+<target_folder="c:\a5webroot\fw4">
+<timestamp=CTODT('02/02/2018 06:03:39 32 pm')>
+>
+<[51]<type="WebComponent">
+<name="{c:\a5\projects\uswtnmobile\uswtnmobile.webprojects\default.webproject\vehiclesv2_stewardship.a5wcmp}">
+<target_folder="c:\a5webroot\fw4">
+<timestamp=CTODT('02/02/2018 06:03:39 53 pm')>
+>
+<[52]<type="file">
+<name="{c:\a5\projects\uswtn\uswtn.webprojects\default.webproject\css\a5system\images\wait.gif}">
+<target_folder="c:\a5webroot\fw4">
+<timestamp=CTODT('02/06/2018 07:15:56 55 am')>
+>
+<[53]<type="css">
+<name="androidlight">
+<target_folder="c:\a5webroot\fw4">
+<timestamp=CTODT('02/02/2018 06:03:39 61 pm')>
+>
+<[54]<type="cssIcon">
+<name="materialicons">
+<target_folder="c:\a5webroot\fw4">
+<timestamp=CTODT('02/02/2018 06:03:39 87 pm')>
+>
+>

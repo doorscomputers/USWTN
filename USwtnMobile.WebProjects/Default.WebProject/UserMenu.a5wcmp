@@ -1,0 +1,1177 @@
+{
+    "$schema": "UX",
+    "$definition": {
+        "style_name": "AndroidLight",
+        "style_type": "Alpha Five",
+        "resolveAbstractClassNames": true,
+        "builderVersionNumber": 1,
+        "overrideStyleName": "Default",
+        "FontSize": "Larger",
+        "A5ContainerClassPadding": "4px",
+        "layoutType": "ControlWidth",
+        "pageTitle": "Stewardship",
+        "serverSideEvents": {
+            "onTabbedUIInitialize": ""
+        },
+        "activeLanguage": "<Default>",
+        "datePicker": {
+            "dayNames": "Sun,Mon,Tue,Wed,Thu,Fri,Sat",
+            "monthNames": "January,February,March,April,May,June,July,August,September,October,November,December",
+            "firstDayOfWeek": 1,
+            "todayButtonText": "Today",
+            "closeButtonText": "Close",
+            "OKButtonText": "OK"
+        },
+        "clientSideDateFormat": "MM/dd/yyyy",
+        "info": {
+            "createdBy": "WarrenD",
+            "dateCreated": "2017-10-24",
+            "dateLastEdited": "2017-10-26"
+        },
+        "checkSessionEvery": 1,
+        "warningIntervalBeforeExpiration": 1,
+        "sessionTimeOutWarningMessage": "Your session will expire in {secondsToSessionEnd} seconds. Click the button to extend your session.",
+        "sessionExtendSessionButtonLabel": "Extend Session",
+        "sessionTimeoutWarningDialogTitle": "Warning",
+        "sessionHasExpiredMessage": "Your session has expired.",
+        "sessionHasExpiredButtonLabel": "OK",
+        "sessionHasExpiredAction": "Nothing",
+        "sessionHasExpiredRedirectPage": "<self>",
+        "sessionHasExpiredDialogTitle": "Notice",
+        "sessionHasExpiredOKButtonJavascript": "<ReloadThisPage>",
+        "login": {
+            "display": true,
+            "loginPrompt": "Login",
+            "logoutPrompt": "Logout",
+            "loginActionType": "FullReload",
+            "showPromptForCreateNewAccount": false,
+            "newAccountLinkLocation": "MenuBar",
+            "promptForCreateNewAccount": "Register",
+            "createNewAccountComponent": "",
+            "createNewAccountWindowTitle": "Create New Account",
+            "customLeftMenuBarHTML": "",
+            "customCenterMenuBarHTML": "",
+            "loggedInMessageTemplate": "Logged in as: {userName}",
+            "dialog": {
+                "usernameLabel": "User Name",
+                "passwordLabel": "Password",
+                "hasFreeformLayout": false,
+                "freeformLayout": "",
+                "userNameLabelStyle": "",
+                "userNameFieldStyle": "",
+                "passwordLabelStyle": "",
+                "passwordFieldStyle": "",
+                "animation": true,
+                "animate": {
+                    "show": {
+                        "method": "slide",
+                        "speed": "slow"
+                    },
+                    "hide": {
+                        "method": "slide",
+                        "speed": "slow"
+                    }
+                },
+                "width": "",
+                "height": "",
+                "loginButtonLabel": "Login",
+                "loginButtonStyle": "",
+                "cancelButtonLabel": "Cancel",
+                "cancelButtonStyle": "",
+                "headerText": "",
+                "footerText": "",
+                "disableAutocompleteOnUsername": false,
+                "disableAutocompleteOnPassword": true
+            }
+        },
+        "page_fields": [
+            {
+                "controlType": "layout_directive_ContainerBegin",
+                "display": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=82dcb2cd-1f82-4d7d-9a5c-592c17b22a30}{I:'$$format.border.style.dash'} [Container: CONTAINER_1]",
+                "displayODFlat": "{Data=82dcb2cd-1f82-4d7d-9a5c-592c17b22a30}{I:'$$format.border.style.dash'} [Container: CONTAINER_1]",
+                "idInternal": "82dcb2cd-1f82-4d7d-9a5c-592c17b22a30",
+                "lastIndex": 8,
+                "parentContainer": -1,
+                "displayOD": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=82dcb2cd-1f82-4d7d-9a5c-592c17b22a30}{I:'$$format.border.style.dash'} [Container: CONTAINER_1]",
+                "repeatingSectionParentId": -1,
+                "displayODtree": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=82dcb2cd-1f82-4d7d-9a5c-592c17b22a30}{I:'$$format.border.style.dash'} [Container: CONTAINER_1]",
+                "v": {
+                    "container": {
+                        "ID": "CONTAINER_1",
+                        "contentAlignment": "Left",
+                        "width": "40%",
+                        "buttonGroup": {
+                            "orientation": "Horizontal"
+                        },
+                        "subType": "None",
+                        "edgeOffset": ""
+                    },
+                    "precalc": {
+                        "javascriptAbstractSetupCode": ""
+                    }
+                },
+                "indentTree": 0,
+                "precalc": {
+                    "ControlHTML": "<div \tid=\"{grid.componentname}.CONTAINER_1.R{grid.rownumber}\"   \n\t\t\tclass=\"A5container \"  style=\"width: 40%; \"  ><!--DIV for Container control-->"
+                },
+                "isCollapsed": false
+            },
+            {
+                "controlType": "TabbedUIButton",
+                "display": "{B=White,Light Blue}{I:'vertLine'}{Data=fd2328dd-1ffc-49bf-a7db-183493c15e37}{I:'$$control.html.advButton'} [Tabbed UI Button: Stewardship Admin (UX Component)] �",
+                "displayODFlat": "{Data=fd2328dd-1ffc-49bf-a7db-183493c15e37}{I:'$$control.html.advButton'} [Tabbed UI Button: StewardshipAdminMenu]",
+                "idInternal": "fd2328dd-1ffc-49bf-a7db-183493c15e37",
+                "parentContainer": 1,
+                "displayOD": "{B=White,Light Blue}{I:'vertLine'}{Data=fd2328dd-1ffc-49bf-a7db-183493c15e37}{I:'$$control.html.advButton'} [Tabbed UI Button: StewardshipAdminMenu]",
+                "repeatingSectionParentId": -1,
+                "displayODtree": "{B=White,Light Blue}{I:'vertLine'}{Data=fd2328dd-1ffc-49bf-a7db-183493c15e37}{I:'$$control.html.advButton'} [Tabbed UI Button: Stewardship Admin (UX Component)] �",
+                "v": {
+                    "tabbedUI": {
+                        "buttonType": "Button",
+                        "buttonText": "Stewardship Admin",
+                        "actionType": "Component",
+                        "paneTitle": "Stewardship Admin",
+                        "canClosePane": true,
+                        "treeControl": {
+                            "controlNesting": "SameLevelAsPrevious",
+                            "outdentLevel": 1,
+                            "treeControlIndentLevel": -1,
+                            "icon": "<Auto>"
+                        },
+                        "header": {
+                            "className": "<Default>",
+                            "style": {
+                                "borderTopStyle": "none",
+                                "borderBottomStyle": "solid",
+                                "borderBottomColor": "#ddd",
+                                "borderBottomWidth": "1px",
+                                "padding": "0px"
+                            },
+                            "show": true,
+                            "canHide": true
+                        },
+                        "grid": {
+                            "gridName": "StewardshipAdminMenu",
+                            "componentType": "UX",
+                            "alias": "<DefaultAlias>",
+                            "useMasterStyle": true,
+                            "workingMessage": "<img src=\"css/A5System/Images/wait.gif\" /> Working..."
+                        },
+                        "report": {
+                            "workingMessage": "Working...",
+                            "printReportButtonLabel": "Print Report",
+                            "moreRecordsTemplate": "<hr />Showing first [DisplayRecords] of [TotalRecords] records in query",
+                            "moreRecordsStyle": "text-align: center;",
+                            "initialView": "PDF",
+                            "HTMLToolbar": {
+                                "buttons": {
+                                    "pdf": true,
+                                    "excel": true,
+                                    "printHTML": true,
+                                    "word": true,
+                                    "pdfButton": {
+                                        "text": "PDF",
+                                        "buttonType": "Image followed by text",
+                                        "imageName": "images/$$application.adobe.pdf.png.a5image",
+                                        "bubbleHelp": "Print report as a PDF document."
+                                    },
+                                    "excelButton": {
+                                        "text": "Excel",
+                                        "buttonType": "Image followed by text",
+                                        "imageName": "images/$$application.ms.excel.png.a5image",
+                                        "bubbleHelp": "Export report to Excel."
+                                    },
+                                    "printHTMLButton": {
+                                        "text": "Print HTML",
+                                        "buttonType": "Image followed by text",
+                                        "imageName": "images/$$device.printer.png.a5image",
+                                        "bubbleHelp": "Print the HTML report."
+                                    },
+                                    "WordButton": {
+                                        "text": "Word",
+                                        "buttonType": "Image followed by text",
+                                        "imageName": "images/$$application.ms.word.png.a5image",
+                                        "bubbleHelp": "Export report to Word."
+                                    },
+                                    "textButton": {
+                                        "text": "Text",
+                                        "buttonType": "Image followed by text",
+                                        "imageName": "images/$$control.text.png.a5image",
+                                        "bubbleHelp": "Export data in report to a text file."
+                                    },
+                                    "bookmarksButton": {
+                                        "buttonType": "Text",
+                                        "text": "Bookmarks",
+                                        "imageName": "images/$$generic.book.png.a5image"
+                                    }
+                                },
+                                "bookMarkPanelSize": "3in"
+                            }
+                        },
+                        "keyboardshortcutkey": ""
+                    },
+                    "class": "<Default>",
+                    "style": "width:1.5in;",
+                    "BreakType": "After",
+                    "breakHeight": ".1in",
+                    "breakHorizontalSpace": ".1in",
+                    "securityGroups": "9f1b738c1057491a80099c9cdfac4bb4,Administrators,4269a7c8214a4c21a88bb9f61e330a61,StewardshipAdmin,dbeef0a3a83c4e58934ffda89baa438b,USWTN-Admin",
+                    "javascript": {
+                        "onclick": "action_{alias}_fd2328dd_1ffc_49bf_a7db_183493c15e37(); return false;"
+                    },
+                    "sencha": {
+                        "animation": {
+                            "type": "slide",
+                            "duration": 500
+                        }
+                    },
+                    "pageLayoutPart": {
+                        "grid": {
+                            "onLoadCompleteJavascript": ""
+                        }
+                    }
+                },
+                "indentTree": 1,
+                "precalc": {
+                    "ControlHTML": "<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:1.5in;\" title=\"\"  onclick=\"action_{alias}_fd2328dd_1ffc_49bf_a7db_183493c15e37(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >Stewardship Admin</button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n\t",
+                    "tabbedUIButtonJavascript": "window['action_{alias}_fd2328dd_1ffc_49bf_a7db_183493c15e37'] = function() {\n\t\n\t\n\tvar onCompleteCode = '';\n\tvar callbackId = A5.UUID();\n\tvar objx = tbiObj._ajaxCallbackCompleteCode;\n\tif(typeof objx == 'undefined') objx = {};\n\tobjx[callbackId] = Function(onCompleteCode);\n\t\n\n\n\tvar go = new Object();\n\t\tgo.dialog2Name = 'StewardshipAdminMenu';\n\tgo.type = 'dialog2';\n\t\n\tgo.alias = '{alias}_STEWARDSHI_143234UXYE';\n\tgo.workingMessage = '<img src=\"css/A5System/Images/wait.gif\" /> Working...';\n\tgo.flagTimer = 'F';\n\tgo.flagQueryEcho = 'F';\n\tgo.flagDebugMode = 'F';\n\tgo.userFilter = '';\n\tgo.baseFilter = '';\n\tgo.userOrder = '';\n\tgo.overrideSettings = 'style_name=`{tabbedUI.style}`'+'||';\n\tgo.arguments = '';\n\t\n\t\n\tgo.localArguments = '';\n\tgo.linkDefinition = '';\n\tgo.placeHolderValues = '';\n\tgo.parameterBucket = $gvs('{alias}.PARAMETERBUCKET');\n\tgo.argumentValueBucket = $gvs('{alias}.ARGUMENTVALUES');\n\tgo.a5_default_path = '{tabbedUI.a5_default_path}';\n\tgo.onLoadCompleteJavascript = 'run:'+callbackId;\n\t\n\n\n\n\t\n\t{tabbedUI.alias}Obj.add({title: 'Stewardship Admin',  name :'{alias}_STEWARDSHI_143234UXYE', type:'dialog2', data: go , header: {\n\tclassName: '{tabbedUI.style}FooterTD',\n\tstyle: {\n\t\tborderTopStyle: 'none',\n\t\tborderBottomStyle: 'solid',\n\t\tborderBottomColor: '#ddd',\n\t\tborderBottomWidth: '1px',\n\t\tpadding: '0px'\n\t},\n\tshow: true,\n\thtml: '<div id=\"fd2328dd_1ffc_49bf_a7db_183493c15e37\"><div></div></div>'\n}, autoRefresh: false  }); \n\t\n}\n"
+                },
+                "inPanelCard": false,
+                "inTreeControl": false,
+                "tmplTxtComputed": false
+            },
+            {
+                "controlType": "TabbedUIButton",
+                "display": "{B=White,Light Blue}{I:'vertLine'}{Data=21339398_b5cb_4cb3_89df_191cfc3d46c5}{I:'$$control.html.advButton'} [Tabbed UI Button: Stewardship User (UX Component)] �",
+                "displayODFlat": "{Data=21339398_b5cb_4cb3_89df_191cfc3d46c5}{I:'$$control.html.advButton'} [Tabbed UI Button: My Account]",
+                "idInternal": "21339398_b5cb_4cb3_89df_191cfc3d46c5",
+                "parentContainer": 1,
+                "displayOD": "{B=White,Light Blue}{I:'vertLine'}{Data=21339398_b5cb_4cb3_89df_191cfc3d46c5}{I:'$$control.html.advButton'} [Tabbed UI Button: My Account]",
+                "repeatingSectionParentId": -1,
+                "displayODtree": "{B=White,Light Blue}{I:'vertLine'}{Data=21339398_b5cb_4cb3_89df_191cfc3d46c5}{I:'$$control.html.advButton'} [Tabbed UI Button: Stewardship User (UX Component)] �",
+                "v": {
+                    "tabbedUI": {
+                        "buttonType": "Button",
+                        "buttonText": "Stewardship User",
+                        "actionType": "Component",
+                        "paneTitle": "Dashboard",
+                        "canClosePane": true,
+                        "treeControl": {
+                            "controlNesting": "SameLevelAsPrevious",
+                            "outdentLevel": 1,
+                            "treeControlIndentLevel": -1,
+                            "icon": "<Auto>"
+                        },
+                        "header": {
+                            "className": "<Default>",
+                            "style": {
+                                "borderTopStyle": "none",
+                                "borderBottomStyle": "solid",
+                                "borderBottomColor": "#ddd",
+                                "borderBottomWidth": "1px",
+                                "padding": "0px"
+                            },
+                            "show": true,
+                            "canHide": true
+                        },
+                        "grid": {
+                            "gridName": "Stewardship_Account",
+                            "componentType": "UX",
+                            "alias": "<DefaultAlias>",
+                            "useMasterStyle": true,
+                            "workingMessage": "<img src=\"css/A5System/Images/wait.gif\" /> Working..."
+                        },
+                        "report": {
+                            "workingMessage": "Working...",
+                            "printReportButtonLabel": "Print Report",
+                            "moreRecordsTemplate": "<hr />Showing first [DisplayRecords] of [TotalRecords] records in query",
+                            "moreRecordsStyle": "text-align: center;",
+                            "initialView": "PDF",
+                            "HTMLToolbar": {
+                                "buttons": {
+                                    "pdf": true,
+                                    "excel": true,
+                                    "printHTML": true,
+                                    "word": true,
+                                    "pdfButton": {
+                                        "text": "PDF",
+                                        "buttonType": "Image followed by text",
+                                        "imageName": "images/$$application.adobe.pdf.png.a5image",
+                                        "bubbleHelp": "Print report as a PDF document."
+                                    },
+                                    "excelButton": {
+                                        "text": "Excel",
+                                        "buttonType": "Image followed by text",
+                                        "imageName": "images/$$application.ms.excel.png.a5image",
+                                        "bubbleHelp": "Export report to Excel."
+                                    },
+                                    "printHTMLButton": {
+                                        "text": "Print HTML",
+                                        "buttonType": "Image followed by text",
+                                        "imageName": "images/$$device.printer.png.a5image",
+                                        "bubbleHelp": "Print the HTML report."
+                                    },
+                                    "WordButton": {
+                                        "text": "Word",
+                                        "buttonType": "Image followed by text",
+                                        "imageName": "images/$$application.ms.word.png.a5image",
+                                        "bubbleHelp": "Export report to Word."
+                                    },
+                                    "textButton": {
+                                        "text": "Text",
+                                        "buttonType": "Image followed by text",
+                                        "imageName": "images/$$control.text.png.a5image",
+                                        "bubbleHelp": "Export data in report to a text file."
+                                    },
+                                    "bookmarksButton": {
+                                        "buttonType": "Text",
+                                        "text": "Bookmarks",
+                                        "imageName": "images/$$generic.book.png.a5image"
+                                    }
+                                },
+                                "bookMarkPanelSize": "3in"
+                            }
+                        },
+                        "keyboardshortcutkey": ""
+                    },
+                    "class": "<Default>",
+                    "style": "width:1.5in;",
+                    "BreakType": "After",
+                    "breakHeight": ".1in",
+                    "breakHorizontalSpace": ".1in",
+                    "securityGroups": "9f1b738c1057491a80099c9cdfac4bb4,Administrators,05fcabbc8fdf460e8960757b4bf4effa,StewardshipUser,dbeef0a3a83c4e58934ffda89baa438b,USWTN-Admin",
+                    "javascript": {
+                        "onclick": "action_{alias}_21339398_b5cb_4cb3_89df_191cfc3d46c5(); return false;"
+                    },
+                    "sencha": {
+                        "animation": {
+                            "type": "slide",
+                            "duration": 500
+                        }
+                    },
+                    "pageLayoutPart": {
+                        "grid": {
+                            "onLoadCompleteJavascript": ""
+                        }
+                    }
+                },
+                "indentTree": 1,
+                "precalc": {
+                    "ControlHTML": "<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:1.5in;\" title=\"\"  onclick=\"action_{alias}_21339398_b5cb_4cb3_89df_191cfc3d46c5(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >Stewardship User</button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n\t",
+                    "tabbedUIButtonJavascript": "window['action_{alias}_21339398_b5cb_4cb3_89df_191cfc3d46c5'] = function() {\n\t\n\t\n\tvar onCompleteCode = '';\n\tvar callbackId = A5.UUID();\n\tvar objx = tbiObj._ajaxCallbackCompleteCode;\n\tif(typeof objx == 'undefined') objx = {};\n\tobjx[callbackId] = Function(onCompleteCode);\n\t\n\n\n\tvar go = new Object();\n\t\tgo.dialog2Name = 'Stewardship_Account';\n\tgo.type = 'dialog2';\n\t\n\tgo.alias = '{alias}_STEWARDSHI_142231DNZD';\n\tgo.workingMessage = '<img src=\"css/A5System/Images/wait.gif\" /> Working...';\n\tgo.flagTimer = 'F';\n\tgo.flagQueryEcho = 'F';\n\tgo.flagDebugMode = 'F';\n\tgo.userFilter = '';\n\tgo.baseFilter = '';\n\tgo.userOrder = '';\n\tgo.overrideSettings = 'style_name=`{tabbedUI.style}`'+'||';\n\tgo.arguments = '';\n\t\n\t\n\tgo.localArguments = '';\n\tgo.linkDefinition = '';\n\tgo.placeHolderValues = '';\n\tgo.parameterBucket = $gvs('{alias}.PARAMETERBUCKET');\n\tgo.argumentValueBucket = $gvs('{alias}.ARGUMENTVALUES');\n\tgo.a5_default_path = '{tabbedUI.a5_default_path}';\n\tgo.onLoadCompleteJavascript = 'run:'+callbackId;\n\t\n\n\n\n\t\n\t{tabbedUI.alias}Obj.add({title: 'Dashboard',  name :'{alias}_STEWARDSHI_142231DNZD', type:'dialog2', data: go , header: {\n\tclassName: '{tabbedUI.style}FooterTD',\n\tstyle: {\n\t\tborderTopStyle: 'none',\n\t\tborderBottomStyle: 'solid',\n\t\tborderBottomColor: '#ddd',\n\t\tborderBottomWidth: '1px',\n\t\tpadding: '0px'\n\t},\n\tshow: true,\n\thtml: '<div id=\"21339398_b5cb_4cb3_89df_191cfc3d46c5\"><div></div></div>'\n}, autoRefresh: false  }); \n\t\n}\n"
+                },
+                "parentIsCollapsed": false,
+                "inPanelCard": false,
+                "inTreeControl": false,
+                "tmplTxtComputed": false
+            },
+            {
+                "controlType": "TabbedUIButton",
+                "display": "{B=White,Light Blue}{I:'vertLine'}{Data=b469c025_4ae4_4a39_be2f_46f07943263f}{I:'$$control.html.advButton'} [Tabbed UI Button: Generator Admin (UX Component)] �",
+                "displayODFlat": "{Data=b469c025_4ae4_4a39_be2f_46f07943263f}{I:'$$control.html.advButton'} [Tabbed UI Button: Stewardship]",
+                "idInternal": "b469c025_4ae4_4a39_be2f_46f07943263f",
+                "parentContainer": 1,
+                "displayOD": "{B=White,Light Blue}{I:'vertLine'}{Data=b469c025_4ae4_4a39_be2f_46f07943263f}{I:'$$control.html.advButton'} [Tabbed UI Button: Stewardship]",
+                "repeatingSectionParentId": -1,
+                "displayODtree": "{B=White,Light Blue}{I:'vertLine'}{Data=b469c025_4ae4_4a39_be2f_46f07943263f}{I:'$$control.html.advButton'} [Tabbed UI Button: Generator Admin (UX Component)] �",
+                "v": {
+                    "tabbedUI": {
+                        "buttonType": "Button",
+                        "buttonText": "Generator Admin",
+                        "actionType": "Component",
+                        "paneTitle": "Stewardship",
+                        "canClosePane": true,
+                        "treeControl": {
+                            "controlNesting": "SameLevelAsPrevious",
+                            "outdentLevel": 1,
+                            "treeControlIndentLevel": -1,
+                            "icon": "<Auto>"
+                        },
+                        "header": {
+                            "className": "<Default>",
+                            "style": {
+                                "borderTopStyle": "none",
+                                "borderBottomStyle": "solid",
+                                "borderBottomColor": "#ddd",
+                                "borderBottomWidth": "1px",
+                                "padding": "0px"
+                            },
+                            "show": true,
+                            "canHide": true
+                        },
+                        "grid": {
+                            "gridName": "Stewardship",
+                            "componentType": "UX",
+                            "alias": "<DefaultAlias>",
+                            "useMasterStyle": true,
+                            "workingMessage": "<img src=\"css/A5System/Images/wait.gif\" /> Working..."
+                        },
+                        "report": {
+                            "workingMessage": "Working...",
+                            "printReportButtonLabel": "Print Report",
+                            "moreRecordsTemplate": "<hr />Showing first [DisplayRecords] of [TotalRecords] records in query",
+                            "moreRecordsStyle": "text-align: center;",
+                            "initialView": "PDF",
+                            "HTMLToolbar": {
+                                "buttons": {
+                                    "pdf": true,
+                                    "excel": true,
+                                    "printHTML": true,
+                                    "word": true,
+                                    "pdfButton": {
+                                        "text": "PDF",
+                                        "buttonType": "Image followed by text",
+                                        "imageName": "images/$$application.adobe.pdf.png.a5image",
+                                        "bubbleHelp": "Print report as a PDF document."
+                                    },
+                                    "excelButton": {
+                                        "text": "Excel",
+                                        "buttonType": "Image followed by text",
+                                        "imageName": "images/$$application.ms.excel.png.a5image",
+                                        "bubbleHelp": "Export report to Excel."
+                                    },
+                                    "printHTMLButton": {
+                                        "text": "Print HTML",
+                                        "buttonType": "Image followed by text",
+                                        "imageName": "images/$$device.printer.png.a5image",
+                                        "bubbleHelp": "Print the HTML report."
+                                    },
+                                    "WordButton": {
+                                        "text": "Word",
+                                        "buttonType": "Image followed by text",
+                                        "imageName": "images/$$application.ms.word.png.a5image",
+                                        "bubbleHelp": "Export report to Word."
+                                    },
+                                    "textButton": {
+                                        "text": "Text",
+                                        "buttonType": "Image followed by text",
+                                        "imageName": "images/$$control.text.png.a5image",
+                                        "bubbleHelp": "Export data in report to a text file."
+                                    },
+                                    "bookmarksButton": {
+                                        "buttonType": "Text",
+                                        "text": "Bookmarks",
+                                        "imageName": "images/$$generic.book.png.a5image"
+                                    }
+                                },
+                                "bookMarkPanelSize": "3in"
+                            }
+                        },
+                        "keyboardshortcutkey": ""
+                    },
+                    "class": "<Default>",
+                    "style": "width:1.5in;",
+                    "BreakType": "After",
+                    "breakHeight": ".1in",
+                    "breakHorizontalSpace": ".1in",
+                    "securityGroups": "6b9b3d43789a407f901407e80eaafd54,GeneratorAdmin",
+                    "javascript": {
+                        "onclick": "action_{alias}_b469c025_4ae4_4a39_be2f_46f07943263f(); return false;"
+                    },
+                    "sencha": {
+                        "animation": {
+                            "type": "slide",
+                            "duration": 500
+                        }
+                    },
+                    "pageLayoutPart": {
+                        "grid": {
+                            "onLoadCompleteJavascript": ""
+                        }
+                    }
+                },
+                "indentTree": 1,
+                "precalc": {
+                    "ControlHTML": "<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:1.5in;\" title=\"\"  onclick=\"action_{alias}_b469c025_4ae4_4a39_be2f_46f07943263f(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >Generator Admin</button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n\t",
+                    "tabbedUIButtonJavascript": "window['action_{alias}_b469c025_4ae4_4a39_be2f_46f07943263f'] = function() {\n\t\n\t\n\tvar onCompleteCode = '';\n\tvar callbackId = A5.UUID();\n\tvar objx = tbiObj._ajaxCallbackCompleteCode;\n\tif(typeof objx == 'undefined') objx = {};\n\tobjx[callbackId] = Function(onCompleteCode);\n\t\n\n\n\tvar go = new Object();\n\t\tgo.dialog2Name = 'Stewardship';\n\tgo.type = 'dialog2';\n\t\n\tgo.alias = '{alias}_STEWARDSHI_142247GCUY';\n\tgo.workingMessage = '<img src=\"css/A5System/Images/wait.gif\" /> Working...';\n\tgo.flagTimer = 'F';\n\tgo.flagQueryEcho = 'F';\n\tgo.flagDebugMode = 'F';\n\tgo.userFilter = '';\n\tgo.baseFilter = '';\n\tgo.userOrder = '';\n\tgo.overrideSettings = 'style_name=`{tabbedUI.style}`'+'||';\n\tgo.arguments = '';\n\t\n\t\n\tgo.localArguments = '';\n\tgo.linkDefinition = '';\n\tgo.placeHolderValues = '';\n\tgo.parameterBucket = $gvs('{alias}.PARAMETERBUCKET');\n\tgo.argumentValueBucket = $gvs('{alias}.ARGUMENTVALUES');\n\tgo.a5_default_path = '{tabbedUI.a5_default_path}';\n\tgo.onLoadCompleteJavascript = 'run:'+callbackId;\n\t\n\n\n\n\t\n\t{tabbedUI.alias}Obj.add({title: 'Stewardship',  name :'{alias}_STEWARDSHI_142247GCUY', type:'dialog2', data: go , header: {\n\tclassName: '{tabbedUI.style}FooterTD',\n\tstyle: {\n\t\tborderTopStyle: 'none',\n\t\tborderBottomStyle: 'solid',\n\t\tborderBottomColor: '#ddd',\n\t\tborderBottomWidth: '1px',\n\t\tpadding: '0px'\n\t},\n\tshow: true,\n\thtml: '<div id=\"b469c025_4ae4_4a39_be2f_46f07943263f\"><div></div></div>'\n}, autoRefresh: false  }); \n\t\n}\n"
+                },
+                "inPanelCard": false,
+                "inTreeControl": false,
+                "tmplTxtComputed": false
+            },
+            {
+                "controlType": "TabbedUIButton",
+                "display": "{B=White,Light Blue}{I:'vertLine'}{Data=8d64b13b_800e_4867_8ddc_d787fcccdb4f}{I:'$$control.html.advButton'} [Tabbed UI Button: Hauler Master Admin (UX Component)] �",
+                "displayODFlat": "{Data=8d64b13b_800e_4867_8ddc_d787fcccdb4f}{I:'$$control.html.advButton'} [Tabbed UI Button: StewardshipListMobile]",
+                "idInternal": "8d64b13b_800e_4867_8ddc_d787fcccdb4f",
+                "parentContainer": 1,
+                "displayOD": "{B=White,Light Blue}{I:'vertLine'}{Data=8d64b13b_800e_4867_8ddc_d787fcccdb4f}{I:'$$control.html.advButton'} [Tabbed UI Button: StewardshipListMobile]",
+                "repeatingSectionParentId": -1,
+                "displayODtree": "{B=White,Light Blue}{I:'vertLine'}{Data=8d64b13b_800e_4867_8ddc_d787fcccdb4f}{I:'$$control.html.advButton'} [Tabbed UI Button: Hauler Master Admin (UX Component)] �",
+                "v": {
+                    "tabbedUI": {
+                        "buttonType": "Button",
+                        "buttonText": "Hauler Master Admin",
+                        "actionType": "Component",
+                        "paneTitle": "Hauler Facility Admin",
+                        "canClosePane": true,
+                        "treeControl": {
+                            "controlNesting": "SameLevelAsPrevious",
+                            "outdentLevel": 1,
+                            "treeControlIndentLevel": -1,
+                            "icon": "<Auto>"
+                        },
+                        "header": {
+                            "className": "<Default>",
+                            "style": {
+                                "borderTopStyle": "none",
+                                "borderBottomStyle": "solid",
+                                "borderBottomColor": "#ddd",
+                                "borderBottomWidth": "1px",
+                                "padding": "0px"
+                            },
+                            "show": true,
+                            "canHide": true
+                        },
+                        "grid": {
+                            "gridName": "StewardshipListMobile",
+                            "componentType": "UX",
+                            "alias": "<DefaultAlias>",
+                            "useMasterStyle": true,
+                            "workingMessage": "<img src=\"css/A5System/Images/wait.gif\" /> Working..."
+                        },
+                        "report": {
+                            "workingMessage": "Working...",
+                            "printReportButtonLabel": "Print Report",
+                            "moreRecordsTemplate": "<hr />Showing first [DisplayRecords] of [TotalRecords] records in query",
+                            "moreRecordsStyle": "text-align: center;",
+                            "initialView": "PDF",
+                            "HTMLToolbar": {
+                                "buttons": {
+                                    "pdf": true,
+                                    "excel": true,
+                                    "printHTML": true,
+                                    "word": true,
+                                    "pdfButton": {
+                                        "text": "PDF",
+                                        "buttonType": "Image followed by text",
+                                        "imageName": "images/$$application.adobe.pdf.png.a5image",
+                                        "bubbleHelp": "Print report as a PDF document."
+                                    },
+                                    "excelButton": {
+                                        "text": "Excel",
+                                        "buttonType": "Image followed by text",
+                                        "imageName": "images/$$application.ms.excel.png.a5image",
+                                        "bubbleHelp": "Export report to Excel."
+                                    },
+                                    "printHTMLButton": {
+                                        "text": "Print HTML",
+                                        "buttonType": "Image followed by text",
+                                        "imageName": "images/$$device.printer.png.a5image",
+                                        "bubbleHelp": "Print the HTML report."
+                                    },
+                                    "WordButton": {
+                                        "text": "Word",
+                                        "buttonType": "Image followed by text",
+                                        "imageName": "images/$$application.ms.word.png.a5image",
+                                        "bubbleHelp": "Export report to Word."
+                                    },
+                                    "textButton": {
+                                        "text": "Text",
+                                        "buttonType": "Image followed by text",
+                                        "imageName": "images/$$control.text.png.a5image",
+                                        "bubbleHelp": "Export data in report to a text file."
+                                    },
+                                    "bookmarksButton": {
+                                        "buttonType": "Text",
+                                        "text": "Bookmarks",
+                                        "imageName": "images/$$generic.book.png.a5image"
+                                    }
+                                },
+                                "bookMarkPanelSize": "3in"
+                            }
+                        },
+                        "keyboardshortcutkey": ""
+                    },
+                    "class": "<Default>",
+                    "style": "width:1.5in;",
+                    "BreakType": "After",
+                    "breakHeight": ".1in",
+                    "breakHorizontalSpace": ".1in",
+                    "securityGroups": "9f1b738c1057491a80099c9cdfac4bb4,Administrators,6945e0ec397c441eb48684c448084e1d,HaulerMasterAdmin,dbeef0a3a83c4e58934ffda89baa438b,USWTN-Admin",
+                    "javascript": {
+                        "onclick": "action_{alias}_8d64b13b_800e_4867_8ddc_d787fcccdb4f(); return false;"
+                    },
+                    "sencha": {
+                        "animation": {
+                            "type": "slide",
+                            "duration": 500
+                        }
+                    },
+                    "pageLayoutPart": {
+                        "grid": {
+                            "onLoadCompleteJavascript": ""
+                        }
+                    }
+                },
+                "indentTree": 1,
+                "precalc": {
+                    "ControlHTML": "<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:1.5in;\" title=\"\"  onclick=\"action_{alias}_8d64b13b_800e_4867_8ddc_d787fcccdb4f(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >Hauler Master Admin</button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n\t",
+                    "tabbedUIButtonJavascript": "window['action_{alias}_8d64b13b_800e_4867_8ddc_d787fcccdb4f'] = function() {\n\t\n\t\n\tvar onCompleteCode = '';\n\tvar callbackId = A5.UUID();\n\tvar objx = tbiObj._ajaxCallbackCompleteCode;\n\tif(typeof objx == 'undefined') objx = {};\n\tobjx[callbackId] = Function(onCompleteCode);\n\t\n\n\n\tvar go = new Object();\n\t\tgo.dialog2Name = 'StewardshipListMobile';\n\tgo.type = 'dialog2';\n\t\n\tgo.alias = '{alias}_STEWARDSHI_142722MNNT';\n\tgo.workingMessage = '<img src=\"css/A5System/Images/wait.gif\" /> Working...';\n\tgo.flagTimer = 'F';\n\tgo.flagQueryEcho = 'F';\n\tgo.flagDebugMode = 'F';\n\tgo.userFilter = '';\n\tgo.baseFilter = '';\n\tgo.userOrder = '';\n\tgo.overrideSettings = 'style_name=`{tabbedUI.style}`'+'||';\n\tgo.arguments = '';\n\t\n\t\n\tgo.localArguments = '';\n\tgo.linkDefinition = '';\n\tgo.placeHolderValues = '';\n\tgo.parameterBucket = $gvs('{alias}.PARAMETERBUCKET');\n\tgo.argumentValueBucket = $gvs('{alias}.ARGUMENTVALUES');\n\tgo.a5_default_path = '{tabbedUI.a5_default_path}';\n\tgo.onLoadCompleteJavascript = 'run:'+callbackId;\n\t\n\n\n\n\t\n\t{tabbedUI.alias}Obj.add({title: 'Hauler Facility Admin',  name :'{alias}_STEWARDSHI_142722MNNT', type:'dialog2', data: go , header: {\n\tclassName: '{tabbedUI.style}FooterTD',\n\tstyle: {\n\t\tborderTopStyle: 'none',\n\t\tborderBottomStyle: 'solid',\n\t\tborderBottomColor: '#ddd',\n\t\tborderBottomWidth: '1px',\n\t\tpadding: '0px'\n\t},\n\tshow: true,\n\thtml: '<div id=\"8d64b13b_800e_4867_8ddc_d787fcccdb4f\"><div></div></div>'\n}, autoRefresh: false  }); \n\t\n}\n"
+                },
+                "inPanelCard": false,
+                "inTreeControl": false,
+                "tmplTxtComputed": false
+            },
+            {
+                "controlType": "TabbedUIButton",
+                "display": "{B=White,Light Blue}{I:'vertLine'}{Data=d80eddf2-126d-4efe-b0d1-3084eee01499}{I:'$$control.html.advButton'} [Tabbed UI Button: Hauler User (UX Component)] �",
+                "displayODFlat": "{Data=d80eddf2-126d-4efe-b0d1-3084eee01499}{I:'$$control.html.advButton'} [Tabbed UI Button: StewardshipListMobile]",
+                "idInternal": "d80eddf2-126d-4efe-b0d1-3084eee01499",
+                "parentContainer": 1,
+                "displayOD": "{B=White,Light Blue}{I:'vertLine'}{Data=d80eddf2-126d-4efe-b0d1-3084eee01499}{I:'$$control.html.advButton'} [Tabbed UI Button: StewardshipListMobile]",
+                "repeatingSectionParentId": -1,
+                "displayODtree": "{B=White,Light Blue}{I:'vertLine'}{Data=d80eddf2-126d-4efe-b0d1-3084eee01499}{I:'$$control.html.advButton'} [Tabbed UI Button: Hauler User (UX Component)] �",
+                "v": {
+                    "tabbedUI": {
+                        "buttonType": "Button",
+                        "buttonText": "Hauler User",
+                        "actionType": "Component",
+                        "paneTitle": "Advance Search",
+                        "canClosePane": true,
+                        "treeControl": {
+                            "controlNesting": "SameLevelAsPrevious",
+                            "outdentLevel": 1,
+                            "treeControlIndentLevel": -1,
+                            "icon": "<Auto>"
+                        },
+                        "header": {
+                            "className": "<Default>",
+                            "style": {
+                                "borderTopStyle": "none",
+                                "borderBottomStyle": "solid",
+                                "borderBottomColor": "#ddd",
+                                "borderBottomWidth": "1px",
+                                "padding": "0px"
+                            },
+                            "show": true,
+                            "canHide": true
+                        },
+                        "grid": {
+                            "gridName": "StewardshipListMobile",
+                            "componentType": "UX",
+                            "alias": "<DefaultAlias>",
+                            "useMasterStyle": true,
+                            "workingMessage": "<img src=\"css/A5System/Images/wait.gif\" /> Working..."
+                        },
+                        "report": {
+                            "workingMessage": "Working...",
+                            "printReportButtonLabel": "Print Report",
+                            "moreRecordsTemplate": "<hr />Showing first [DisplayRecords] of [TotalRecords] records in query",
+                            "moreRecordsStyle": "text-align: center;",
+                            "initialView": "PDF",
+                            "HTMLToolbar": {
+                                "buttons": {
+                                    "pdf": true,
+                                    "excel": true,
+                                    "printHTML": true,
+                                    "word": true,
+                                    "pdfButton": {
+                                        "text": "PDF",
+                                        "buttonType": "Image followed by text",
+                                        "imageName": "images/$$application.adobe.pdf.png.a5image",
+                                        "bubbleHelp": "Print report as a PDF document."
+                                    },
+                                    "excelButton": {
+                                        "text": "Excel",
+                                        "buttonType": "Image followed by text",
+                                        "imageName": "images/$$application.ms.excel.png.a5image",
+                                        "bubbleHelp": "Export report to Excel."
+                                    },
+                                    "printHTMLButton": {
+                                        "text": "Print HTML",
+                                        "buttonType": "Image followed by text",
+                                        "imageName": "images/$$device.printer.png.a5image",
+                                        "bubbleHelp": "Print the HTML report."
+                                    },
+                                    "WordButton": {
+                                        "text": "Word",
+                                        "buttonType": "Image followed by text",
+                                        "imageName": "images/$$application.ms.word.png.a5image",
+                                        "bubbleHelp": "Export report to Word."
+                                    },
+                                    "textButton": {
+                                        "text": "Text",
+                                        "buttonType": "Image followed by text",
+                                        "imageName": "images/$$control.text.png.a5image",
+                                        "bubbleHelp": "Export data in report to a text file."
+                                    },
+                                    "bookmarksButton": {
+                                        "buttonType": "Text",
+                                        "text": "Bookmarks",
+                                        "imageName": "images/$$generic.book.png.a5image"
+                                    }
+                                },
+                                "bookMarkPanelSize": "3in"
+                            }
+                        },
+                        "keyboardshortcutkey": ""
+                    },
+                    "class": "<Default>",
+                    "style": "width:1.5in;",
+                    "BreakType": "After",
+                    "breakHeight": ".1in",
+                    "breakHorizontalSpace": ".1in",
+                    "securityGroups": "9f1b738c1057491a80099c9cdfac4bb4,Administrators,dbeef0a3a83c4e58934ffda89baa438b,USWTN-Admin",
+                    "javascript": {
+                        "onclick": "action_{alias}_d80eddf2_126d_4efe_b0d1_3084eee01499(); return false;"
+                    },
+                    "sencha": {
+                        "animation": {
+                            "type": "slide",
+                            "duration": 500
+                        }
+                    },
+                    "pageLayoutPart": {
+                        "grid": {
+                            "onLoadCompleteJavascript": ""
+                        }
+                    }
+                },
+                "indentTree": 1,
+                "precalc": {
+                    "ControlHTML": "<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:1.5in;\" title=\"\"  onclick=\"action_{alias}_d80eddf2_126d_4efe_b0d1_3084eee01499(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >Hauler User</button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n\t",
+                    "tabbedUIButtonJavascript": "window['action_{alias}_d80eddf2_126d_4efe_b0d1_3084eee01499'] = function() {\n\t\n\t\n\tvar onCompleteCode = '';\n\tvar callbackId = A5.UUID();\n\tvar objx = tbiObj._ajaxCallbackCompleteCode;\n\tif(typeof objx == 'undefined') objx = {};\n\tobjx[callbackId] = Function(onCompleteCode);\n\t\n\n\n\tvar go = new Object();\n\t\tgo.dialog2Name = 'StewardshipListMobile';\n\tgo.type = 'dialog2';\n\t\n\tgo.alias = '{alias}_STEWARDSHI_142744HBRK';\n\tgo.workingMessage = '<img src=\"css/A5System/Images/wait.gif\" /> Working...';\n\tgo.flagTimer = 'F';\n\tgo.flagQueryEcho = 'F';\n\tgo.flagDebugMode = 'F';\n\tgo.userFilter = '';\n\tgo.baseFilter = '';\n\tgo.userOrder = '';\n\tgo.overrideSettings = 'style_name=`{tabbedUI.style}`'+'||';\n\tgo.arguments = '';\n\t\n\t\n\tgo.localArguments = '';\n\tgo.linkDefinition = '';\n\tgo.placeHolderValues = '';\n\tgo.parameterBucket = $gvs('{alias}.PARAMETERBUCKET');\n\tgo.argumentValueBucket = $gvs('{alias}.ARGUMENTVALUES');\n\tgo.a5_default_path = '{tabbedUI.a5_default_path}';\n\tgo.onLoadCompleteJavascript = 'run:'+callbackId;\n\t\n\n\n\n\t\n\t{tabbedUI.alias}Obj.add({title: 'Advance Search',  name :'{alias}_STEWARDSHI_142744HBRK', type:'dialog2', data: go , header: {\n\tclassName: '{tabbedUI.style}FooterTD',\n\tstyle: {\n\t\tborderTopStyle: 'none',\n\t\tborderBottomStyle: 'solid',\n\t\tborderBottomColor: '#ddd',\n\t\tborderBottomWidth: '1px',\n\t\tpadding: '0px'\n\t},\n\tshow: true,\n\thtml: '<div id=\"d80eddf2_126d_4efe_b0d1_3084eee01499\"><div></div></div>'\n}, autoRefresh: false  }); \n\t\n}\n"
+                },
+                "inPanelCard": false,
+                "inTreeControl": false,
+                "tmplTxtComputed": false
+            },
+            {
+                "controlType": "TabbedUIButton",
+                "display": "{B=White,Light Blue}{I:'vertLine'}{Data=9ba954b2-fadf-449b-b2be-b40452884945}{I:'$$control.html.advButton'} [Tabbed UI Button: Processor Admin (UX Component)] �",
+                "displayODFlat": "{Data=9ba954b2-fadf-449b-b2be-b40452884945}{I:'$$control.html.advButton'} [Tabbed UI Button: Stewardship]",
+                "idInternal": "9ba954b2-fadf-449b-b2be-b40452884945",
+                "parentContainer": 1,
+                "displayOD": "{B=White,Light Blue}{I:'vertLine'}{Data=9ba954b2-fadf-449b-b2be-b40452884945}{I:'$$control.html.advButton'} [Tabbed UI Button: Stewardship]",
+                "repeatingSectionParentId": -1,
+                "displayODtree": "{B=White,Light Blue}{I:'vertLine'}{Data=9ba954b2-fadf-449b-b2be-b40452884945}{I:'$$control.html.advButton'} [Tabbed UI Button: Processor Admin (UX Component)] �",
+                "v": {
+                    "tabbedUI": {
+                        "buttonType": "Button",
+                        "buttonText": "Processor Admin",
+                        "actionType": "Component",
+                        "paneTitle": "Stewardship",
+                        "canClosePane": true,
+                        "treeControl": {
+                            "controlNesting": "SameLevelAsPrevious",
+                            "outdentLevel": 1,
+                            "treeControlIndentLevel": -1,
+                            "icon": "<Auto>"
+                        },
+                        "header": {
+                            "className": "<Default>",
+                            "style": {
+                                "borderTopStyle": "none",
+                                "borderBottomStyle": "solid",
+                                "borderBottomColor": "#ddd",
+                                "borderBottomWidth": "1px",
+                                "padding": "0px"
+                            },
+                            "show": true,
+                            "canHide": true
+                        },
+                        "grid": {
+                            "gridName": "Stewardship",
+                            "componentType": "UX",
+                            "alias": "<DefaultAlias>",
+                            "useMasterStyle": true,
+                            "workingMessage": "<img src=\"css/A5System/Images/wait.gif\" /> Working..."
+                        },
+                        "report": {
+                            "workingMessage": "Working...",
+                            "printReportButtonLabel": "Print Report",
+                            "moreRecordsTemplate": "<hr />Showing first [DisplayRecords] of [TotalRecords] records in query",
+                            "moreRecordsStyle": "text-align: center;",
+                            "initialView": "PDF",
+                            "HTMLToolbar": {
+                                "buttons": {
+                                    "pdf": true,
+                                    "excel": true,
+                                    "printHTML": true,
+                                    "word": true,
+                                    "pdfButton": {
+                                        "text": "PDF",
+                                        "buttonType": "Image followed by text",
+                                        "imageName": "images/$$application.adobe.pdf.png.a5image",
+                                        "bubbleHelp": "Print report as a PDF document."
+                                    },
+                                    "excelButton": {
+                                        "text": "Excel",
+                                        "buttonType": "Image followed by text",
+                                        "imageName": "images/$$application.ms.excel.png.a5image",
+                                        "bubbleHelp": "Export report to Excel."
+                                    },
+                                    "printHTMLButton": {
+                                        "text": "Print HTML",
+                                        "buttonType": "Image followed by text",
+                                        "imageName": "images/$$device.printer.png.a5image",
+                                        "bubbleHelp": "Print the HTML report."
+                                    },
+                                    "WordButton": {
+                                        "text": "Word",
+                                        "buttonType": "Image followed by text",
+                                        "imageName": "images/$$application.ms.word.png.a5image",
+                                        "bubbleHelp": "Export report to Word."
+                                    },
+                                    "textButton": {
+                                        "text": "Text",
+                                        "buttonType": "Image followed by text",
+                                        "imageName": "images/$$control.text.png.a5image",
+                                        "bubbleHelp": "Export data in report to a text file."
+                                    },
+                                    "bookmarksButton": {
+                                        "buttonType": "Text",
+                                        "text": "Bookmarks",
+                                        "imageName": "images/$$generic.book.png.a5image"
+                                    }
+                                },
+                                "bookMarkPanelSize": "3in"
+                            }
+                        },
+                        "keyboardshortcutkey": ""
+                    },
+                    "class": "<Default>",
+                    "style": "width:1.5in;",
+                    "BreakType": "After",
+                    "breakHeight": ".1in",
+                    "breakHorizontalSpace": ".1in",
+                    "securityGroups": "9f1b738c1057491a80099c9cdfac4bb4,Administrators,71dce2d905b647e2be85d3f048700f53,ProcessorAdmin,dbeef0a3a83c4e58934ffda89baa438b,USWTN-Admin",
+                    "javascript": {
+                        "onclick": "action_{alias}_9ba954b2_fadf_449b_b2be_b40452884945(); return false;"
+                    },
+                    "sencha": {
+                        "animation": {
+                            "type": "slide",
+                            "duration": 500
+                        }
+                    },
+                    "pageLayoutPart": {
+                        "grid": {
+                            "onLoadCompleteJavascript": ""
+                        }
+                    }
+                },
+                "indentTree": 1,
+                "precalc": {
+                    "ControlHTML": "<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:1.5in;\" title=\"\"  onclick=\"action_{alias}_9ba954b2_fadf_449b_b2be_b40452884945(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >Processor Admin</button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n\t",
+                    "tabbedUIButtonJavascript": "window['action_{alias}_9ba954b2_fadf_449b_b2be_b40452884945'] = function() {\n\t\n\t\n\tvar onCompleteCode = '';\n\tvar callbackId = A5.UUID();\n\tvar objx = tbiObj._ajaxCallbackCompleteCode;\n\tif(typeof objx == 'undefined') objx = {};\n\tobjx[callbackId] = Function(onCompleteCode);\n\t\n\n\n\tvar go = new Object();\n\t\tgo.dialog2Name = 'Stewardship';\n\tgo.type = 'dialog2';\n\t\n\tgo.alias = '{alias}_STEWARDSHI_142815QHMM';\n\tgo.workingMessage = '<img src=\"css/A5System/Images/wait.gif\" /> Working...';\n\tgo.flagTimer = 'F';\n\tgo.flagQueryEcho = 'F';\n\tgo.flagDebugMode = 'F';\n\tgo.userFilter = '';\n\tgo.baseFilter = '';\n\tgo.userOrder = '';\n\tgo.overrideSettings = 'style_name=`{tabbedUI.style}`'+'||';\n\tgo.arguments = '';\n\t\n\t\n\tgo.localArguments = '';\n\tgo.linkDefinition = '';\n\tgo.placeHolderValues = '';\n\tgo.parameterBucket = $gvs('{alias}.PARAMETERBUCKET');\n\tgo.argumentValueBucket = $gvs('{alias}.ARGUMENTVALUES');\n\tgo.a5_default_path = '{tabbedUI.a5_default_path}';\n\tgo.onLoadCompleteJavascript = 'run:'+callbackId;\n\t\n\n\n\n\t\n\t{tabbedUI.alias}Obj.add({title: 'Stewardship',  name :'{alias}_STEWARDSHI_142815QHMM', type:'dialog2', data: go , header: {\n\tclassName: '{tabbedUI.style}FooterTD',\n\tstyle: {\n\t\tborderTopStyle: 'none',\n\t\tborderBottomStyle: 'solid',\n\t\tborderBottomColor: '#ddd',\n\t\tborderBottomWidth: '1px',\n\t\tpadding: '0px'\n\t},\n\tshow: true,\n\thtml: '<div id=\"9ba954b2_fadf_449b_b2be_b40452884945\"><div></div></div>'\n}, autoRefresh: false  }); \n\t\n}\n"
+                },
+                "inPanelCard": false,
+                "inTreeControl": false,
+                "tmplTxtComputed": false
+            },
+            {
+                "controlType": "layout_directive_ContainerEnd",
+                "display": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=f34d0c07-f139-4a95-8575-d10a1a595d9b}{I:'vertLineCap'} [Container End: CONTAINER_1]",
+                "displayODFlat": "{Data=f34d0c07-f139-4a95-8575-d10a1a595d9b}{I:'$$format.border.style.dash'} [Container End]",
+                "idInternal": "f34d0c07-f139-4a95-8575-d10a1a595d9b",
+                "parentContainer": -1,
+                "displayOD": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=f34d0c07-f139-4a95-8575-d10a1a595d9b}{I:'vertLineCap'} [Container End]",
+                "repeatingSectionParentId": -1,
+                "displayODtree": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=f34d0c07-f139-4a95-8575-d10a1a595d9b}{I:'vertLineCap'} [Container End: CONTAINER_1]",
+                "v": {
+                    "container": {
+                        "BreakType": "None",
+                        "BreakHeight": ".1in",
+                        "breakHorizontalSpace": ".1in"
+                    }
+                },
+                "indentTree": 0,
+                "precalc": {
+                    "ControlHTML": "<div style=\"font: 0pt arial;clear:both;\"></div>\n\t</div>\n<!--breakbegin--><div  id=\"{dialog.componentname}.V.R1.CONTAINER_1.BREAK\" class=\"A5container\" style=\"width:.1in; font: 0pt;\">&nbsp;</div><!--breakend-->"
+                },
+                "parentIsCollapsed": false,
+                "containerStartIndex": 1
+            },
+            {
+                "controlType": "layout_directive_FrameBegin",
+                "display": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=2838365b_6392_4e78_99bd_134030ea79dd}{I:'$$control.group'} [Frame: <<strong>Navigation to Website</strong>> - FRAME_2]",
+                "displayODFlat": "{Data=2838365b_6392_4e78_99bd_134030ea79dd}{I:'$$control.group'} [Frame: Navigation]",
+                "idInternal": "2838365b_6392_4e78_99bd_134030ea79dd",
+                "lastIndex": 13,
+                "parentContainer": -1,
+                "displayOD": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=2838365b_6392_4e78_99bd_134030ea79dd}{I:'$$control.group'} [Frame: Navigation]",
+                "repeatingSectionParentId": -1,
+                "displayODtree": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=2838365b_6392_4e78_99bd_134030ea79dd}{I:'$$control.group'} [Frame: <<strong>Navigation to Website</strong>> - FRAME_2]",
+                "v": {
+                    "FrameTitle": "<strong>Navigation to Website</strong>",
+                    "Frame": {
+                        "ID": "FRAME_2",
+                        "type": "Simple",
+                        "initialState": "Shown",
+                        "nonFloating": false
+                    },
+                    "precalc": {
+                        "javascriptAbstractSetupCode": ""
+                    }
+                },
+                "indentTree": 0,
+                "precalc": {
+                    "ControlHTML": "<div class=\"A5container\"     ><!-- DIV Container for fieldset '{grid.componentname}.FRAME_2'-->\n\t<div>\n\t<fieldset id=\"{grid.componentname}FRAME_2\" class=\"\" style=\"-moz-border-radius: 8px;display:inline; \" >\n\t<legend class=\"\" style=\"\"  ><strong>Navigation to Website</strong></legend>"
+                }
+            },
+            {
+                "controlType": "layout_directive_hyperlink",
+                "display": "{B=White,Light Blue}{I:'vertLine'}{Data=5eb81981_e340_4103_b43b_446ab2ea4f4b}{I:'$$generic.link'} [Hyperlink: Exit to website] �",
+                "displayODFlat": "{Data=5eb81981_e340_4103_b43b_446ab2ea4f4b}{I:'$$generic.link'} [Hyperlink]",
+                "idInternal": "5eb81981_e340_4103_b43b_446ab2ea4f4b",
+                "parentContainer": 9,
+                "displayOD": "{B=White,Light Blue}{I:'vertLine'}{Data=5eb81981_e340_4103_b43b_446ab2ea4f4b}{I:'$$generic.link'} [Hyperlink]",
+                "repeatingSectionParentId": -1,
+                "displayODtree": "{B=White,Light Blue}{I:'vertLine'}{Data=5eb81981_e340_4103_b43b_446ab2ea4f4b}{I:'$$generic.link'} [Hyperlink: Exit to website] �",
+                "v": {
+                    "hyperlinkText": "Exit to website",
+                    "Class": "<Default>",
+                    "BreakType": "After",
+                    "hyperlinkTextClass": "<Default>",
+                    "href": "index.a5w",
+                    "id": "HYPERLINK_1",
+                    "precalc": {
+                        "javascriptAbstractSetupCode": ""
+                    },
+                    "labelClass": "<Default>",
+                    "labelPosition": "None",
+                    "labelWidth": "{Global.LabelWidth}",
+                    "labelAlignment": "Left",
+                    "breakHorizontalSpace": ".1in"
+                },
+                "indentTree": 1,
+                "precalc": {
+                    "ControlHTML": "<div class=\"A5container\">\n\t<a id=\"HYPERLINK_1\" title=\"\" href=\"index.a5w\"  class=\"[class.gridHyperlinkButton]\" style=\"\"   >Exit to website</a>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><!--breakend-->"
+                },
+                "inPanelCard": false,
+                "inTreeControl": false
+            },
+            {
+                "controlType": "layout_directive_hyperlink",
+                "display": "{B=White,Light Blue}{I:'vertLine'}{Data=80172707_d98d_4a67_86d6_31cd70da7bce}{I:'$$generic.link'} [Hyperlink: Close Tabs] �",
+                "displayODFlat": "{Data=80172707_d98d_4a67_86d6_31cd70da7bce}{I:'$$generic.link'} [Hyperlink]",
+                "idInternal": "80172707_d98d_4a67_86d6_31cd70da7bce",
+                "parentContainer": 9,
+                "displayOD": "{B=White,Light Blue}{I:'vertLine'}{Data=80172707_d98d_4a67_86d6_31cd70da7bce}{I:'$$generic.link'} [Hyperlink]",
+                "repeatingSectionParentId": -1,
+                "displayODtree": "{B=White,Light Blue}{I:'vertLine'}{Data=80172707_d98d_4a67_86d6_31cd70da7bce}{I:'$$generic.link'} [Hyperlink: Close Tabs] �",
+                "v": {
+                    "hyperlinkText": "Close Tabs",
+                    "Class": "<Default>",
+                    "BreakType": "After",
+                    "hyperlinkTextClass": "<Default>",
+                    "id": "HYPERLINK_2",
+                    "showHideExpn": "1=2",
+                    "precalc": {
+                        "javascriptAbstractSetupCode": ""
+                    },
+                    "labelClass": "<Default>",
+                    "labelPosition": "None",
+                    "labelWidth": "{Global.LabelWidth}",
+                    "labelAlignment": "Left",
+                    "breakHorizontalSpace": ".1in",
+                    "javascript": {
+                        "onclick": "/* actionJavascript:1ed797f4-e258-4564-bc26-cea19d1ce638   */\ntbiObj.closeOpenPanes();"
+                    }
+                },
+                "indentTree": 1,
+                "precalc": {
+                    "ControlHTML": "<!--TAGSTART:80172707_d98d_4a67_86d6_31cd70da7bce-->\n<div class=\"A5container\">\n\t<a id=\"HYPERLINK_2\" title=\"\" href=\"#\"  class=\"[class.gridHyperlinkButton]\" style=\"\"  onclick=\"tbiObj.closeOpenPanes();;$e.stopEvent(event);\"  >Close Tabs</a>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><!--breakend-->\n<!--TAGEND:80172707_d98d_4a67_86d6_31cd70da7bce-->\n"
+                },
+                "inPanelCard": false,
+                "inTreeControl": false
+            },
+            {
+                "controlType": "layout_directive_hyperlink",
+                "display": "{B=White,Light Blue}{I:'vertLine'}{Data=24008fb5_2b2c_4ca6_862e_0babe3a5415c}{I:'$$generic.link'} [Hyperlink: Logout] �",
+                "displayODFlat": "{Data=24008fb5_2b2c_4ca6_862e_0babe3a5415c}{I:'$$generic.link'} [Hyperlink]",
+                "idInternal": "24008fb5_2b2c_4ca6_862e_0babe3a5415c",
+                "parentContainer": 9,
+                "displayOD": "{B=White,Light Blue}{I:'vertLine'}{Data=24008fb5_2b2c_4ca6_862e_0babe3a5415c}{I:'$$generic.link'} [Hyperlink]",
+                "repeatingSectionParentId": -1,
+                "displayODtree": "{B=White,Light Blue}{I:'vertLine'}{Data=24008fb5_2b2c_4ca6_862e_0babe3a5415c}{I:'$$generic.link'} [Hyperlink: Logout] �",
+                "v": {
+                    "hyperlinkText": "Logout",
+                    "Class": "<Default>",
+                    "BreakType": "After",
+                    "hyperlinkTextClass": "<Default>",
+                    "href": "logout.a5w",
+                    "id": "HYPERLINK_3",
+                    "precalc": {
+                        "javascriptAbstractSetupCode": ""
+                    },
+                    "labelClass": "<Default>",
+                    "labelPosition": "None",
+                    "labelWidth": "{Global.LabelWidth}",
+                    "labelAlignment": "Left",
+                    "breakHorizontalSpace": ".1in"
+                },
+                "indentTree": 1,
+                "precalc": {
+                    "ControlHTML": "<div class=\"A5container\">\n\t<a id=\"HYPERLINK_3\" title=\"\" href=\"logout.a5w\"  class=\"[class.gridHyperlinkButton]\" style=\"\"   >Logout</a>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><!--breakend-->"
+                },
+                "inPanelCard": false,
+                "inTreeControl": false
+            },
+            {
+                "controlType": "layout_directive_FrameEnd",
+                "display": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=b6d0ce7c_ebd9_4d1d_a396_d8628f0ed9f8}{I:'vertLineCap'} [Frame End - FRAME_2] �",
+                "displayODFlat": "{Data=b6d0ce7c_ebd9_4d1d_a396_d8628f0ed9f8}{I:'$$control.group'} [Frame End]",
+                "idInternal": "b6d0ce7c_ebd9_4d1d_a396_d8628f0ed9f8",
+                "parentContainer": -1,
+                "displayOD": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=b6d0ce7c_ebd9_4d1d_a396_d8628f0ed9f8}{I:'vertLineCap'} [Frame End]",
+                "repeatingSectionParentId": -1,
+                "displayODtree": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=b6d0ce7c_ebd9_4d1d_a396_d8628f0ed9f8}{I:'vertLineCap'} [Frame End - FRAME_2] �",
+                "v": {
+                    "Frame": {
+                        "BreakType": "After",
+                        "BreakHeight": ".1in",
+                        "breakHorizontalSpace": ".1in"
+                    }
+                },
+                "indentTree": 0,
+                "precalc": {
+                    "ControlHTML": "</fieldset>\n</div><!--End DIV Container for fieldset -->\n</div>\n<!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->"
+                },
+                "containerStartIndex": 9
+            }
+        ],
+        "builderType": "TabbedUI",
+        "guid": "0e7de159-95f4-436e-a660-a6c3d0f2fb52",
+        "componentName": "UserMenu",
+        "componentFilename": "C:\\a5\\projects\\uswtn\\uswtn.WebProjects\\Default.WebProject\\UserMenu.a5wcmp",
+        "_style_versionNumber": 3,
+        "_style_hasSassOverrides": false,
+        "_style_hasCSSTweaks": false,
+        "_style_hasCSS_or_subtheme_tweaks": false,
+        "useCompactTheme": true,
+        "SVGLinkedFiles": "",
+        "localsvg": "",
+        "saveFileType": "Formatted JSON",
+        "keyboardShortcutsJSON": "",
+        "selected": "fd2328dd-1ffc-49bf-a7db-183493c15e37\n",
+        "designPaneIndex": 1,
+        "masterPaneC": "controls",
+        "serverSideEventIndex": 1,
+        "clientSideEventIndex": 1,
+        "clientSideEventIndexC": "1",
+        "__WPhostName": "Internet Explorer",
+        "embeddedMode": false,
+        "_style_hassubthemeTweaks": false,
+        "repeatingSectionsAreDirty": true,
+        "flagDropdownCascadingChanged": false,
+        "toolBox_value": "tabbedUIButton_GridComponent",
+        "addinBuildNumber": "4981",
+        "addinBuildNumberHighestUsed": "4981",
+        "alphaFiveBuildNumber": "12",
+        "openedFromTemplate": false,
+        "builtWithVersionNumer": 1,
+        "_buildCount": "28",
+        "securityEnabled": true,
+        "showHideIsUsed": true,
+        "precalc": {
+            "usesSystemSVG": false,
+            "buttonPanel": {
+                "HTML": "<div \tid=\"{tabbedUI.alias}.CONTAINER_1.R{grid.rownumber}\"   \n\t\t\tclass=\"A5container \"  style=\"width: 40%; \"  ><!--DIV for Container control-->\n<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:1.5in;\" title=\"\"  onclick=\"action_{alias}_fd2328dd_1ffc_49bf_a7db_183493c15e37(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >Stewardship Admin</button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:1.5in;\" title=\"\"  onclick=\"action_{alias}_21339398_b5cb_4cb3_89df_191cfc3d46c5(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >Stewardship User</button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:1.5in;\" title=\"\"  onclick=\"action_{alias}_b469c025_4ae4_4a39_be2f_46f07943263f(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >Generator Admin</button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:1.5in;\" title=\"\"  onclick=\"action_{alias}_8d64b13b_800e_4867_8ddc_d787fcccdb4f(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >Hauler Master Admin</button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:1.5in;\" title=\"\"  onclick=\"action_{alias}_d80eddf2_126d_4efe_b0d1_3084eee01499(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >Hauler User</button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:1.5in;\" title=\"\"  onclick=\"action_{alias}_9ba954b2_fadf_449b_b2be_b40452884945(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >Processor Admin</button>\n</div>\n<div style=\"font: 0pt arial;clear:both;\"></div>\n\t</div>\n<!--breakbegin--><div  id=\"{dialog.componentname}.V.R1.CONTAINER_1.BREAK\" class=\"A5container\" style=\"width:.1in; font: 0pt;\">&nbsp;</div><!--breakend-->\n<div class=\"A5container\"     ><!-- DIV Container for fieldset '{tabbedUI.alias}.FRAME_2'-->\n\t<div>\n\t<fieldset id=\"{tabbedUI.alias}FRAME_2\" class=\"\" style=\"-moz-border-radius: 8px;display:inline; \" >\n\t<legend class=\"\" style=\"\"  ><strong>Navigation to Website</strong></legend>\n<div class=\"A5container\">\n\t<a id=\"HYPERLINK_1\" title=\"\" href=\"index.a5w\"  class=\"[class.gridHyperlinkButton]\" style=\"\"   >Exit to website</a>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><!--breakend-->\n<!--TAGSTART:80172707_d98d_4a67_86d6_31cd70da7bce-->\n<div class=\"A5container\">\n\t<a id=\"HYPERLINK_2\" title=\"\" href=\"#\"  class=\"[class.gridHyperlinkButton]\" style=\"\"  onclick=\"tbiObj.closeOpenPanes();;$e.stopEvent(event);\"  >Close Tabs</a>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><!--breakend-->\n<!--TAGEND:80172707_d98d_4a67_86d6_31cd70da7bce-->\n<div class=\"A5container\">\n\t<a id=\"HYPERLINK_3\" title=\"\" href=\"logout.a5w\"  class=\"[class.gridHyperlinkButton]\" style=\"\"   >Logout</a>\n</div>\n</fieldset>\n</div><!--End DIV Container for fieldset -->\n</div>\n<!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->",
+                "JS": ""
+            },
+            "treeControlJS": "",
+            "hompePageJavascript": "",
+            "PageSetupJavascript": "\nvar tbiObj = new A5.TabbedInterfaceComponentHelper('{tabbedUI.alias}',__tabSettings__);\ntbiObj._functions = {};\ntbiObj._buttons = [];\n\n\n\n\ntbiObj.showTabbedUIMenuPanel = function(flag) { \tif(typeof flag == 'undefined') flag = true;\n\tif(typeof jQuery != 'undefined' && flag) {\n\t\tvar ele = $('tbi.MENUPANEL');\n\t\tele.style.display = '';\n\t\t$('tbi.EXPANDBAR').style.display = 'none';\n\t\tjQuery(ele).animate({width:$ga(ele,'A5OLDWIDTH') }, tbiObj._showAnimationSpeed,'');\n\t\ttbiObj.refreshLayout();\n\t} else {\n\t\t$('tbi.MENUPANEL').style.display=''; $('tbi.EXPANDBAR').style.display = 'none'; tbiObj.refreshLayout();\n\t}\n\n\t}\ntbiObj.hideTabbedUIMenuPanel = function(flag) { \tif(typeof flag == 'undefined') flag = true;\n\tif(typeof arguments[1] != 'undefined') flagShowExpandBar = arguments[1] ;\n\telse flagShowExpandBar = true;\n\tvar ele = $('tbi.MENUPANEL');\n\tif($ga(ele,'A5OLDWIDTH') == '' || $ga(ele,'A5OLDWIDTH') == null) $sa(ele,'A5OLDWIDTH',ele.style.width);\n\tif(typeof jQuery != 'undefined' && flag) {\n\t\tjQuery(ele).animate({width:22}, tbiObj._hideAnimationSpeed,'',function() {\n\t\t    var mele = $('tbi.MENUPANEL');\n\t\t    mele.style.display='none';\n\n\t\t    if(flagShowExpandBar) $('tbi.EXPANDBAR').style.display = '';\n\t\t});\n\n\t} else {\n\t\t$('tbi.MENUPANEL').style.display='none';\n\t\tif(flagShowExpandBar) $('tbi.EXPANDBAR').style.display = '';\n\t}\n\n\n\t}\n\n\ntbiObj._defaultWindowSettings = new Object();\ntbiObj._defaultWindowSettings['dropdown'] = {\n\ttype: 'popup',\n\ttheme: this.styleName,\n\ttitle: {html: 'Null',show: false},\n\tbody:  {content: {type: 'blank'}}\n};\n\n\ntbiObj._defaultWindowSettings['modal'] = {\n\ttype: 'modal', autoPosition: 'in-view',\n\ttheme: this.styleName,\n\ttitle: {html: 'Customer Grid',\n\t\ttools: {items: [{action: 'close',name: 'Close',image: 'images/$$window.button.close.png.a5image'}],\n\t\t\tdummy: false\n\t\t}},\n\tbody: {content: {type: 'blank'}}\n};\n\ntbiObj._defaultWindowSettings['modeless'] = {\n\ttype: 'modeless', autoPosition: 'in-view',\n\ttheme: this.styleName,\n\ttitle: {html: 'Customer Grid',\n\t\ttools: {items: [{action: 'close',name: 'Close',image: 'images/$$window.button.close.png.a5image'}],\n\t\t\tdummy: false\n\t\t}},\n\tbody: {content: {type: 'blank'}}\n};\n\ntbiObj._genericWindow = new Object();\n\n\ntbiObj.getCurrentPaneIndex = function() {\n\treturn tbiObj._tbObj._curTabIndx;\n}\n\ntbiObj.getCurrentPaneName = function() {\n\treturn tbiObj._tbObj._items[tbiObj._tbObj._curTabIndx].name;\n}\n\ntbiObj.getCurrentPaneLabel = function() {\n\treturn tbiObj._tbObj._items[tbiObj._tbObj._curTabIndx].html;\n}\n\n\ntbiObj.selectPaneByIndex = function(index) {\n\ttbiObj._tbObj.select(index);\n}\n\n\ntbiObj.createWindow =  function(name,settings) {\n\tif(!this.getWindow(name)) {\n\t\tif(typeof settings == 'string') {\n\t\t\tvar parts = settings.split('-');\n\t\t\tsettings = new Object();\n\t\t\t$u.o.assign(settings , this._defaultWindowSettings[parts.shift()]);\n\t\t\tfor(var i=0;i<parts.length;i++){\n\t\t\t\tif(parts[i] == 'url'){\n\t\t\t\t\tsettings.body.content.type = 'url';\n\t\t\t\t\tsettings.body.content.url = 'about:blank';\n\t\t\t\t} else if(parts[i] == 'resizable'){\n\t\t\t\t\tsettings.resize = 'both';\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t\tif(typeof arguments[2] == 'object') $u.o.assign(settings,arguments[2]);\n\t\tthis._genericWindow[name] = new A5.Window(settings);\n\t}\n\treturn this._genericWindow[name];\n}\n\ntbiObj.getWindow =  function(name) {\n\tif(typeof this._genericWindow[name] != 'undefined' ) return this._genericWindow[name];\n\treturn false;\n}\n\n\n\ntbiObj.ajaxCallback = function(xbasicFunction,data) {\n\tvar callbackURL = tbiObj.ajaxURL;\n\tvar data2 = '_callbackType=genericAjaxCallback&_xbasicFunction=' + xbasicFunction + '&' + data;\n\tA5.ajax.callback(callbackURL,data2);\n}\n\ntbiObj._timeToSessionTimeout = function(units) {\n\tif(isNaN($a.lastCallback)) return 9999999999999999;\n\tvar t = (Date.now() - $a.lastCallback);\n\tvar tte = (tbiObj._sessionTimeoutInMSeconds - t);\n\tif(units == 's') return (tte/1000);\n\tif(units == 'm') return (tte/60000);\n\tif(units == 'ms') return (tte);\n\treturn tte\n}\n\n\n\ntbiObj._executeEvent = function(eventName) {\n\tvar result = true;\n\tvar targs = new Array();\n\tfor(var i = 1; i < arguments.length; i++) targs.push(arguments[i]);\n\tvar tresult = false;\n\tif(typeof this[eventName] != 'undefined'  ) {\n\n\t\tif(this[eventName].constructor == Function) {\n\t\t\ttresult = this[eventName].apply(this,targs);\n\t\t\tif(typeof tresult == 'boolean') result = tresult;\n\t\t}\n\t}\n\tif(typeof this['_' +eventName] != 'undefined' ) {\n\t\tif(this['_'+eventName].constructor == Function) {\n\t\t\ttresult = this['_'+eventName].apply(this,targs);\n\t\t\tif(typeof tresult == 'boolean') result = result && tresult;\n\t\t}\n\n\t}\n\treturn result;\n}\n\n\n\n\n\ntbiObj._hideAnimationSpeed = 600;\ntbiObj._showAnimationSpeed = 600;;\n;\n;\n\nA5.msgBox.theme = '{grid.style}';;\n//systemOnRenderComplete\ntbiObj._executeEvent('onRenderComplete',{});",
+            "TabbedUIMasterTemplate": "<iframe style=\"display:none;\" id=\"TBIOBJ.__IFRAME1\"></iframe>\n<input type=\"hidden\" value=\"{parameterBucket}\" id=\"{alias}.PARAMETERBUCKET\"/>\n<input type=\"hidden\" value=\"{savedArgValues}\" id=\"{alias}.ARGUMENTVALUES\"/>\n\n\n<div id=\"{tabbedUI.alias}.TITLEPANEL\" class=\"{Grid.style}GridHeader\" style=\"box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; text-align: center; border-top: none; border-left: none; border-right: none; margin: 0px;\">\n\t<div id=\"{tabbedUI.alias}.MENUTITLE\">\n\t{tabbedUI.mobileMenuTitle}\n\n\t</div>\n\t<div id=\"{tabbedUI.alias}.PANETITLE\">\n\t\t<div style=\"float: left;\">\n\t\t\t<button class=\"{Grid.style}Button\" onclick=\"tbiObj._showMenu(true)\">{tabbedUI.mobileMenuButton}</button>\n\t\t\t<img id=\"{tabbedUI.alias}.PREV\" src=\"css/{Grid.style}/TabbandPrev.png\" onclick=\"if(tbiObj._tbObj._curTabIndx > 0) tbiObj._tbObj.select(tbiObj._tbObj._curTabIndx-1);\" />\n\t\t</div>\n\t\t<div style=\"float: right;\">\n\t\t\t<img id=\"{tabbedUI.alias}.CLOSE\" src=\"css/{Grid.style}/TabbandClose.png\" onclick=\"tbiObj._tbObj.remove(tbiObj._tbObj._curTabIndx);\" />\n\t\t\t<img id=\"{tabbedUI.alias}.NEXT\" src=\"css/{Grid.style}/TabbandNext.png\" onclick=\"if(tbiObj._tbObj._curTabIndx < tbiObj._tbObj._items.length-1) tbiObj._tbObj.select(tbiObj._tbObj._curTabIndx+1);\" />\n\t\t</div>\n\t\t<span id=\"{tabbedUI.alias}.TITLE\">Title</span><br style=\"clear: both;\"/>\n\t</div>\n</div>\n\n\n<table\n\tid=\"{tabbedUI.alias}\"\n\tclass=\"[class.tabbedUI]\"\n\tcellpadding=\"0\"\n\tcellspacing=\"0\"\n\tstyle=\"table-layout: fixed; width: 100%; border: none; \">\n\t<tr>\n\n\t\t<td \tid=\"{tabbedUI.alias}.MENUPANEL\"\n\t\t\t\tclass=\"[class.tabbedUIMenuPanel]\"\n\t\t\t\tstyle=\"{tabbedUI.buttonsPaneStyle}; \"\n\t\t\t\tvAlign=\"top\"><!--TD for the Buttons Pane (which contains the action buttons)-->\n\t\t\t<div \tid=\"{tabbedUI.alias}.MENU\"\n\t\t\t\t\tstyle=\"{tabbedUI.buttonsPadding}\">\n\t\t\t\t{tabbedUI.buttonsPane}\n\t\t\t</div>\n\t\t</td><!--End TD for Buttons Pane-->\n\t\t<td \tclass=\"[class.tabbedUIPanel]\"\n\t\t\t\tid=\"{tabbedUI.alias}.CONTENTPANEL\"\n\t\t\t\tvAlign=\"top\"\n\t\t\t\tstyle=\"padding: 0px; \">\n\t\t\t<div \tid=\"{tabbedUI.alias}.TABBAND\"\n\t\t\t\t\tstyle=\"border-top: none; border-left: none; border-right: none;\">\n\t\t\t</div>\n\t\t\t<div id=\"{tabbedUI.alias}.PANES\" style=\"position:relative;\">\n\t\t\t</div>\n\t\t</td>\n\t</tr>\n</table>\n"
+        },
+        "componentType": "TabbedUI",
+        "version": 1,
+        "alias": "tbi",
+        "linkedResources": "",
+        "A5SaveTimeStamp": "20171026143246652",
+        "a_actionJavascript": [
+            {
+                "actionGuid": "1ed797f4-e258-4564-bc26-cea19d1ce638  ",
+                "scriptMetaData": "<a_ajs<[1]<display=\"{I:'a5_new_xbasic_script'}{F=Tahoma,10}{C=Dark Blue,White}{B=Blue White,Dark Blue}Inline-Javascript  {T=4}{I:'a5_vertical_line'}\">\n<action=\"Inline-Javascript  \">\n<icon=\"a5_new_xbasic_script\">\n<isCommentedOut=.F.>\n<comment=\"\">\n<builder=\"a5ajs_Inline(v,dlg_mode)\">\n<metaData=<<%str%\n<inlineJavascript=\"tbiObj.closeOpenPanes();\">\n%str%>\n<javascriptAttribute=\"tbiObj.closeOpenPanes();\">\n<Javascriptdeclarations_row=\"\">\n<Javascriptdeclarations_global=\"\">\n<xbasicFunctions=\"\">\n>\n>\n<flagRunSynchronously=.F.>\n"
+            }
+        ],
+        "__allowCascadingRecalc": true,
+        "_flagDoTreeview": true,
+        "minimumBuildNumber": "",
+        "Livepreview_permissions": "",
+        "headerHTML": "<h1>US Waste Tire Network </h1>",
+        "footerHTML": "Stewardship",
+        "buttonPanel": {
+            "Location": "Left",
+            "Style": "width: 2.5in;",
+            "paddingLeft": ".25in",
+            "paddingRight": "",
+            "paddingTop": ".25in",
+            "setPaddingOffIfHasTree": true
+        },
+        "homePage": {
+            "TabTitle": "Home",
+            "HTML": "Specify the HTML for the Home page.",
+            "source": "Local",
+            "autoRefresh": false,
+            "URL": ""
+        },
+        "ContainerA5WPageName": "<Default>",
+        "NavigateAwayMessageDirty": "{pane.title} contains unsaved data.",
+        "NavigateAwayMessageClean": "",
+        "promptWhenUserNavigatesFromTabbedUIPage": true,
+        "canCollapseButtonPane": true,
+        "buttonPaneInitialState": "Open",
+        "nocriptContent": "",
+        "closeTabImage": "<Default>",
+        "closeTabHoverImage": "<Default>",
+        "scrollTabsPrevImage": "<Default>",
+        "scrollTabsPrevDisabledImage": "<Default>",
+        "scrollTabsNextImage": "<Default>",
+        "scrollTabsNextDisabledImage": "<Default>",
+        "collapseButtonPanelLeft": "<Specified by Style>",
+        "collapseButtonPanelRight": "<Specified by Style>",
+        "expandButtonPanelLeft": "<Specified by Style>",
+        "expandButtonPanelRight": "<Specified by Style>",
+        "classNameTabBand": "<Default>",
+        "classNameTabBandSeparator": "<Default>",
+        "classNameTabOff": "<Default>",
+        "classNameTabOn": "<Default>",
+        "classNameTabDisabled": "<Default>",
+        "classNameTabBandLeftScroll": "<Default>",
+        "classNameTabBandRightScroll": "<Default>",
+        "classNameTabBandLeftScrollDisabled": "<Default>",
+        "classNameTabBandRightScrollDisabled": "<Default>",
+        "userDefinedHeadContent": "",
+        "noscriptcontent": "",
+        "JavascriptToRunOnStartup": "",
+        "MasterTemplate": "",
+        "componentWidth": "800px",
+        "componentBorderClassName": "{tabbedUI.style}Edit",
+        "componentBorderInlineStyle": "padding: 0px;",
+        "animateShowHideButtons": true,
+        "animate": {
+            "Hide": {
+                "speed": "Slow"
+            },
+            "Show": {
+                "speed": "Slow"
+            }
+        },
+        "hideTabbedUIElements": false,
+        "layout": {
+            "hideTabButtons": false,
+            "layoutMode": "MobileDevice",
+            "MobileModeMenuButtonText": "HOME",
+            "mobileDisplayHomePage": false,
+            "MobileMenuTitle": "STEWARDSHIP MENU"
+        },
+        "hasSearchFeature": false,
+        "searchLabel": "Search",
+        "searchFieldWatermark": "Enter search string",
+        "searchResultsClass": "",
+        "searchPartClass": "",
+        "searchInputClass": "",
+        "nosearchResults": "No results found",
+        "searchResultsButtonClass": "",
+        "minimumHeight": 0,
+        "defaultView": "DesktopBrowser",
+        "autoHideButtonPanel": false,
+        "autoHideDelay": 500,
+        "hideButtonPanePermanenly": false,
+        "legacyThemeJS": "A5.themes.add('{tabbedUI.style}',{\n\ttabBand: {\n\t\tbase: {\n\t\t\tclassName: '{grid.style}FormTABLE {grid.style}ColumnTD A5TabBand',\n\t\t\tseparator:{\n\t\t\t\tclassName: '{grid.style}DataTD A5TabBandSeparator'\n\t\t\t},\n\t\t\ttab: {\n\t\t\t\tclassName: '{grid.style}FormTABLE {grid.style}AltDataTD A5TabBandTabOff',\n\t\t\t\tselectedClassName: '{grid.style}FormTABLE {grid.style}DataTD A5TabBandTabOn',\n\t\t\t\tdisabledClassName: '{grid.style}FormTABLE {grid.style}AltDataTD A5TabBandTabDisabled',\n\t\t\t\tcloseIcon: 'css/A5System/Images/tabclose.png',\n\t\t\t\tcloseIconHover: 'css/A5System/Images/tabcloseHover.png'\n\t\t\t},\n\t\t\tscrollButtons: {\n\t\t\t\tprevClassName: '{grid.style}FormTABLE {grid.style}AltDataTD  A5TabBandLeftScroll',\n\t\t\t\tprevDisabledClassName: '{grid.style}FormTABLE {grid.style}AltDataTD  A5TabBandLeftScroll',\n\t\t\t\tprevImage: 'css/{grid.style}/PrevOn.png',\n\t\t\t\tprevDisabledImage: 'css/{grid.style}/PrevOff.png',\n\t\t\t\tnextClassName: '{grid.style}FormTABLE {grid.style}AltDataTD  A5TabBandRightScroll',\n\t\t\t\tnextDisabledClassName: '{grid.style}FormTABLE {grid.style}AltDataTD  A5TabBandRightScroll',\n\t\t\t\tnextImage: 'css/{grid.style}/NextOn.png',\n\t\t\t\tnextDisabledImage: 'css/{grid.style}/NextOff.png'\n\t\t\t}\n\t\t}\n\t}\n});\n"
+    }
+}

@@ -1,0 +1,33 @@
+<!doctype html>
+<html><head>
+
+<%a5
+'The componentAlias MUST be UNIQUE for each component on the page. It must not have spaces in the name. Keep name as short as possible
+dim componentAlias as c 
+componentAlias = "wt_accessctrl"
+Delete tmpl_wt_accessctrl
+DIM tmpl_wt_accessctrl as P
+tmpl_wt_accessctrl = a5w_load_component("wt_accessctrl") 'SYSTEM GENERATED COMMENT - PLEASE DO NOT REMOVE (LOAD:wt_accessctrl)
+'Following code allows you to override settings in the saved component, and specify the component alias (componentName property).
+'Each component on a page must have a unique alias (componentName property).
+with tmpl_wt_accessctrl
+	componentName = componentalias
+end with 
+'=======================================compute the HTML for the Component=======================================
+delete x_wt_accessctrl
+dim x_wt_accessctrl as p
+x_wt_accessctrl = a5w_run_Component(tmpl_wt_accessctrl)  'SYSTEM GENERATED COMMENT - PLEASE DO NOT REMOVE (RUN:tmpl_wt_accessctrl) (EDIT:wt_accessctrl)
+if x_wt_accessctrl.RedirectURL <> "" then 
+	response.redirect(x_wt_accessctrl.redirectURL)
+	end
+end if 
+?x_wt_accessctrl.Output.Head.JavaScript
+?x_wt_accessctrl.Output.Head.CSS_Link
+%>
+
+</head>
+<body>
+<%A5 ?x_wt_accessctrl.Output.Body.Dialog_Echo %>
+<%A5 ?x_wt_accessctrl.Output.Body.Xbasic_Code_Errors %>
+<%A5 ?x_wt_accessctrl.Output.Body.Dialog_HTML %>
+</body></html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="generator" content="Alpha Anywhere HTML Editor Version 12 Build 2999-4519">
+<!-- must use in order to make XP Themes render -->
+<meta HTTP-EQUIV="MSThemeCompatible" content="Yes" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+
+<title>DTL- Error Log</title>
+
+
+<%a5
+Delete tmpl_DLG_ERRORLOG
+DIM tmpl_DLG_ERRORLOG as P
+tmpl_DLG_ERRORLOG = a5w_load_component("dlg_errorlog") ''SYSTEM GENERATED COMMENT - PLEASE DO NOT REMOVE (LOAD:dlg_errorlog)
+
+'Override settings start -----------------------------------------
+with tmpl_DLG_ERRORLOG
+.alias = "DLG_ERRORLOG"
+_dialogFilename = "dlg_errorlog"
+end with 
+'Override settings end -----------------------------------------
+
+delete x_DLG_ERRORLOG
+dim x_DLG_ERRORLOG as p
+x_DLG_ERRORLOG = a5w_run_Component(tmpl_DLG_ERRORLOG) 'SYSTEM GENERATED COMMENT - PLEASE DO NOT REMOVE (RUN:tmpl) (EDIT:dlg_errorlog)
+
+?x_DLG_ERRORLOG.Output.Head.JavaScript
+?x_DLG_ERRORLOG.Output.Head.CSS_Link
+
+?x_DLG_ERRORLOG.Output.Head.Title 
+%>
+
+
+<!--Alpha Five Temporary Code Start - Will be automatically removed when page is published -->
+<!--CSS for tmpl -->
+<link rel="stylesheet" type="text/css" href="file:///C:/Program Files (x86)/a5V12/css/iOS7/style.css">
+<!--Alpha Five Temporary Code End -->
+
+</head>
+<body>
+
+
+<%a5 ?x_DLG_ERRORLOG.Output.Body.Dialog2_HTML %>
+
+
+</body></html>

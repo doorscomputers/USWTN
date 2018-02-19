@@ -1,0 +1,141 @@
+<%a5
+'==Copyright, REA INC 2012-06-15
+'==This script is responsible for processing queued emails
+
+'==CONFIGURATION-----------------------------------------------
+dim script_mode as C="MYSQL" 	'change this to SQL if you are running for SQL SERVER
+dim email_queue_table_name as C="wt_email_queue"
+dim run_only_with_key as L=.t. 	'whether or not a key needs to be provided to run the script - script must be called like so rea_automail_process.a5w?sk=X  where X is the script key defined below
+dim script_key as C="BRIGHT_SMART104" 'random letters and numbers, use remspecial(api_uuidcreate()) to create a random key, hardcode it here
+dim logfldr as c = "c:\a5\logs"
+'==END CONFIGURATION------------------------------------------
+
+'==some log entries commented out to make it more brief
+
+on error goto err
+'==save_to_file(time("yyyy-MM-dd 0h:0m")+" - Started Processing"+crlf(),logfldr + "\wt_automailer.log",.t.,.t.)
+
+if run_only_with_key then
+	if eval_valid("Request.Variables.sk") then
+		if alltrim(Request.Variables.sk)<>alltrim(script_key) then
+			errorout("RUN_EMAIL_QUEUE|FRAMEWORK - Run with Key was set, but incorrect key was used: "+Request.Variables.sk)
+			end
+		end if
+	else
+		errorout("RUN_EMAIL_QUEUE|FRAMEWORK - Run with Key was set to True but no Key was provided.")
+		end
+	end if
+end if
+
+dim ret as P
+dim ret.error as L
+dim ret.errorText as C
+dim ret.processed_records as N
+dim ret.failed_records as N
+dim ret.failed_emails as C
+dim ret.total_emails as N
+dim cn as SQL::Connection
+dim vSql as C
+dim args as SQL::Arguments
+dim letter_queue as SQL::ResultSet
+dim pm as p '==holds SMTP and Email settings
+
+IF cn.open("::name::conn") = .f.
+	errorout("RUN_EMAIL_QUEUE|Could not Open DB Connection|"+cn.callresult.text)
+	END
+end if
+
+'==get SMTP settings
+vSQL = "SELECT smtp_from,smtp_from_alias,smtp_server,smtp_uname,smtp_pwd,smtp_port,smtp_mode FROM wt_setup"
+if cn.execute(vSQL) = .f.
+	errorout("RUN_EMAIL_QUEUE|Could not get SMTP settings")
+	END
+end if
+pm.smtp_from	= cn.resultset.data("smtp_from")
+pm.from_alias	= cn.resultset.data("smtp_from_alias")
+pm.smtp_server	= cn.resultset.data("smtp_server")
+pm.smtp_user	= cn.resultset.data("smtp_uname")
+pm.smtp_pass	= cn.resultset.data("smtp_pwd")
+pm.smtp_port	= cn.resultset.data("smtp_port")
+pm.smtp_mode	= cn.resultset.data("smtp_mode")
+cn.FreeResult()
+
+'==only grab EMAIL records to be processed that are not disabled
+if upper(script_mode)=="MYSQL" then
+	vSQL = "SELECT * FROM "+email_queue_table_name+" WHERE processed=0 AND cancelled=0 AND process_on<=NOW() AND failure_count<10 LIMIT 100"
+else if upper(script_mode)=="SQL" then
+	vSQL = "SELECT TOP 100 * FROM "+email_queue_table_name+" WHERE processed=0 AND process_on<=getdate()+' 23:59:59' AND failure_count<10"
+end if
+if cn.execute(vSQL,args) = .f.
+	errorout("RUN_EMAIL_QUEUE|Could not load letter queue|"+cn.callresult.text)
+	cn.close()
+	END
+end if
+
+letter_queue=cn.ResultSet
+cn.FreeResult()
+
+while letter_queue.NextRow()
+	ret.total_emails		= ret.total_emails+1
+	dim current_id as N		= letter_queue.data("queue_id")
+	dim msg as C			= letter_queue.data("message")
+	dim msg_html as c		= letter_queue.data("html_message")
+	dim sub as C			= letter_queue.data("subject")
+	dim attachment as C		= letter_queue.data("attachment_dir")
+	pm.to					= letter_queue.data("to_address")
+	pm.cc					= letter_queue.data("cc")
+	pm.bcc					= letter_queue.data("bcc")
+	pm.subject				= sub
+	pm.message				= msg
+	pm.html_message 		= msg_html
+	pm.smtp_manual_setup 	= .t.
+	pm.autowrap 			= .f.
+	if attachment!="" .or. isnull(attachment)==.f. then
+		pm.attachments=attachment
+	end if
+
+	if letter_queue.data("data1") <> "" '==a template is being used, so override some smtp settings
+		vSQL = "SELECT smtp_from, smtp_from_alias FROM wt_email WHERE template='{letter_queue.data(\"data1\")}'"
+		vSQL = evaluate_string(vSQL)
+		if cn.execute(vSQL) = .f.
+			errorout("RUN_EMAIL_QUEUE|Could not get Email_Template SMTP Settings")
+		end if
+		pm.smtp_from	= if(cn.resultset.data("smtp_from")			= "",pm.smtp_from,cn.resultset.data("smtp_from"))
+		pm.from_alias	= if(cn.resultset.data("smtp_from_alias")	= "",pm.from_alias,cn.resultset.data("smtp_from_alias"))
+	end if
+
+	msg=stritran(msg,"'","&#039;")
+	msg=stritran(msg,"\"","&quote;")
+	msg=stritran(msg,"&","&amp;")
+	
+	dim se_ret as p = am_SendEmail("::name::conn",pm)
+	if se_ret.error = .f.
+		ret.processed_records=ret.processed_records+1
+		if upper(script_mode)=="MYSQL" then
+			vSQL = "UPDATE "+email_queue_table_name+" SET processed=1,process_date=NOW() WHERE queue_id="+current_id
+		else if upper(script_mode)=="SQL" then
+			vSQL = "UPDATE "+email_queue_table_name+" SET processed=1,process_date=getdate() WHERE queue_id="+current_id
+		end if
+		if cn.execute(vSQL,args) = .f.
+			errorout("RUN_EMAIL_QUEUE|(SEND SUCCESS) - Could not update record for QueueID#:"+current_id)
+		end if	
+	else
+		ret.failed_records=ret.failed_records+1
+		vSQL = "UPDATE "+email_queue_table_name+" SET failure_count=failure_count+1 WHERE queue_id="+current_id
+		IF cn.execute(vSQL) = .f.
+			errorout("RUN_EMAIL_QUEUE|Could not update failure count for QueueID#: "+current_id+crlf())
+		end if
+		errorout("RUN_EMAIL_QUEUE|Could not send email from QueueID#:"+current_id+crlf()+se_ret.error_msg)
+	end if
+
+end while
+	
+dim summary as C="Processed: "+ret.processed_records+" Failed: "+ret.failed_records
+if ret.processed_records > 0 '==only log if something to process
+	save_to_file(time("yyyy-MM-dd 0h:0m")+"|FRAMEWORK - Completed Processing ["+summary+"]"+crlf(),logfldr + "\wt_automailer.log",.t.,.t.)
+end if
+end
+
+err:
+errorout("RUN_EMAIL_QUEUE|Unexpected Error Occurred: "+error_text_get(error_code_get()))
+%>

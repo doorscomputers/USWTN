@@ -1,0 +1,40 @@
+<!-- Footer Body -->
+<div id="footer">
+	<div class="grid_12">
+		<%a5 ?wt_content("footer_top") %>
+	</div>
+	<div class="container clearfix">
+		<div class="grid_3">
+			<%a5 ?wt_content("footer_left") %>
+		</div>
+		<div class="grid_9 align-right">
+			<%a5 ?wt_content("footer_right") %>
+			<%a5
+			%>
+		</div>
+	</div>
+</div>
+
+<%a5 ?wt_plugins("body") %>
+
+<!-- Scripts for slicknav -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="javascript/jquery.slicknav.js"></script>
+<script>
+var $1 = jQuery.noConflict(true);
+$1(document).ready(function(){
+	$1('#menu').slicknav({
+	label: '',
+	duration: 500
+});
+});
+
+</script>
+<!-- End Scripts for slicknav -->
+
+<%a5
+?wt_setup("body_code")
+%>
+<!-- Footer Body -->
+<%A5 ?wt_atgbranding() %>
+<%a5 ?wt_debugarea() %>

@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<html>
+<head>
+
+<%A5 a5w_include("wt_inc_header_head.a5w") %>
+
+<style>
+	.TB_Wrapper {
+		max-width: 490px;
+		height: 300px;
+	}
+</style>
+<link rel="stylesheet" href="banner/style.css" />
+<script src="banner/jquery-1.7.1.min.js"></script>
+<script src="banner/jquery.easing.1.3.min.js"></script>
+<script src="banner/trans-banner.min.js"></script>
+<script type="text/javascript">
+$.noConflict();
+	jQuery(function($){
+		$('.TB_Wrapper').TransBanner({
+			
+			/*All the below settings are related to responsive behavior:
+			IMPORTANT: In order to make limits to work on browser resize, set the last parameter to false	
+			
+			To enable or disable Responsive behavior */
+			responsive : false,
+			
+			/* To disable autoplay below certain screen size [Ex: 480] */
+			responsive_limit_autoplay : '', 
+			
+			/* To disable caption below certain screen size [Ex: 480]*/
+			responsive_limit_caption : 480,
+			
+			/* To change navigation type below certain screen size [Ex: 480]*/
+			responsive_limit_navigation : 480,
+			
+			/* The navigation type to be used below certain screen size [1: Default, 2: Dot style, 3: Arrow style]*/
+			responsive_limit_navigation_type : 2, 
+			
+			/* The limits can be either screen based or banner container based */
+			responsive_screen_based_limits : true 
+		});
+	});	
+</script>
+
+</head>
+<body>
+<%A5 a5w_include("wt_inc_header_body.a5w") %>
+
+<div class="main_content">
+	<div class="container clearfix">
+		<%a5 ?wt_page("page_title","<h1>") %>
+		<div class="grid_12">
+			<div class="grid_6 alpha" style="font-size:11px;">
+				<%a5 ?wt_banner("main") %>
+			</div>
+			<div class="grid_6 omega">
+				<%a5 ?wt_content("index_1") %>
+			</div>
+		</div>
+	</div>
+</div>
+
+<%a5 a5w_include("wt_inc_footer_body.a5w") %>
+</body>
+</html>

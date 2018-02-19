@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<%a5
+dim actioncomplete as l = .f.
+if eval_valid("cmd")
+	dim FileToUpload as p
+	dim FileToUpload.filename as c
+	dim FileToUpload.data as b
+	'GENERIC UPLOAD TO SESSION FOLDER
+	if FileToUpload.filename <> ""
+		fldr = session.session_folder
+		file.from_blob(fldr + "\\" + FileToUpload.filename, FileToUpload.data)
+	end if
+	actioncomplete = .t.
+end if
+%>
+
+<head>
+</head>
+<body class="upload">
+<form action=" <%a5 ? request.scriptname %> " method="post" enctype="multipart/form-data">
+<input type="file" name="FileToUpload" ><br >
+<input type="submit" name="cmd" value="Upload File">
+</form>
+
+<%a5
+if actioncomplete = .t.
+	?"<div style=\"font-size:small\">Upload complete, you may close this window.</div>"
+end if
+%>
+</body></html>

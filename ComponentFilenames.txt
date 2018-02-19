@@ -1,0 +1,65 @@
+
+
+Stewardship_Account = Related to Reg Info Filtered by Userid
+Stewardship is the List without filter for wt_user which is the main table for registration of all users(Stewardship, Hauler, Generators, etc)
+StewardshipListMobile is with Advanced Searching option
+
+
+
+
+New:
+1. Tabui RegistrationMenu
+2. Login = sampleSecurityMobile
+3. 
+
+
+GENERATOR FIELDS
+
+SELECT CategoryID, BusinessName, OpMan, userid, telephone, address, city, state, zip, AuthorizedAgent, AgentSignature, AgentTitle, Gendate, Status 
+FROM wt_users 
+WHERE companyid = 'GENS'  OR  companyid = 'GENADMN'  
+ORDER BY userid
+
+
+on the list control List Properties Javascript Runtime -under on select 
+{dialog.object}.panelSetActive('PANELCARD_3');
+
+Has Detail View
+Has Search Part
+Search Highlioghting
+Multiple layouts
+
+
+List Layout below
+<div style="display: table; width: 100%;">
+	<div style="display: table-cell; vertical-align: middle;">
+		<div class="[theme:listBox.base.item.parts.mainClassName|{dialog.style}ListItemLabelSub]" style="float: right;">{AgentTitle}</div>
+		<div class="[theme:listBox.base.item.parts.mainClassName|{dialog.style}ListItemLabelMain]">{BusinessName}</div>
+			<br>
+		<div class="[theme:listBox.base.item.parts.subClassName|{dialog.style}ListItemLabelSub]" style="float: right;">{Status}</div>
+		<div class="[theme:listBox.base.item.parts.subClassName|{dialog.style}ListItemLabelMain]" style="float: left;>{city},</div>
+		<div class="[theme:listBox.base.item.parts.subClassName|{dialog.style}ListItemLabelMain]">{state}</div>
+	</div>
+	
+	<div style="display: table-cell; width: 40px; text-align: right; vertical-align: middle;">
+		<img src="{images.dialog.listNav}" />
+	</div>
+</div>
+
+
+
+
+List Events
+In select
+{dialog.object}.panelSetActive('PANELCARD_3');
+
+
+
+
+
+Button Save Enable Expression
+(dialog.listDetailView.GENERATORSLIST.isDirty = true) AND (dialog.listDetailView.GENERATORSLIST.mode <> 'search')
+
+
+Synchronize Enable expression
+(dialog.list.GENERATORSLIST.isDirty = true)  AND (dialog.listDetailView.GENERATORSLIST.mode <> 'search')

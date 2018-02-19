@@ -1,0 +1,60 @@
+{
+	"variables": [
+	{
+		"Name": "fontFamily",
+		"Value": "Helvetica Neue,HelveticaNeue,Helvetica-Neue,Helvetica,BBAlpha Sans,sans-serif"
+	},
+	{
+		"Name": "primary",
+		"Value": "#000"
+	},
+	{
+		"Name": "primaryBack",
+		"Value": "#ffffff"
+	},
+	{
+		"Name": "error",
+		"Value": "#fd472a"
+	},
+	{
+		"Name": "accent",
+		"Value": "#007aff"
+	},
+	{
+		"Name": "confirm",
+		"Value": "#4cd662"
+	},
+	{
+		"Name": "deny",
+		"Value": "#fd472a"
+	},
+	{
+		"Name": "sliderBack",
+		"Value": "#0b8adc"
+	},
+	{
+		"Name": "switchOn",
+		"Value": "#ffffff"
+	},
+	{
+		"Name": "switchOnBack",
+		"Value": "#4bd762"
+	},
+	{
+		"Name": "calendar",
+		"Value": "#ffffff"
+	},
+	{
+		"Name": "calendarBack",
+		"Value": "#ff3b30"
+	},
+	{
+		"Name": "iconSize",
+		"Value": "24px"
+	},
+	{
+		"Name": "iconSmSize",
+		"Value": "18px"
+	}
+]
+}
